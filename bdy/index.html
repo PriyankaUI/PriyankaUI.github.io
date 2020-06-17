@@ -12,11 +12,16 @@
              margin: 0;
              padding: 0;
          }
+         body{
+             background: url('image/rajstn2.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
           h3{
               background-color: red;
               padding: 10px;
               color:white;
-              margin: 10% 30%;
+              margin: 50% 30%;
           }
           a{
               color:white;
@@ -30,19 +35,35 @@
               height: 2px;
               background: linear-gradient(to right,#0c002b,#1779ff);
           }
+          .road{
+              border-bottom: 10px solid black;
+              width: 100%;
+              margin-top: -20%;
+
+          }
+          marquee 
+          {
+             
+          }
+
+          marquee img{
+              height: 220px;
+              width: 250px;
+              margin-top: 10%;
+          }
      </style>
 </head>
 <body>
     <div class="container">
-        <div class="row">
+       <!-- <div class="row">
             <div class="col-12">
             <div class="image text-center">
                 <h1>HAPPY BIRTHDAY TO YOU</h1>
             </div>
             </div>
-        </div>
+        </div>-->
         <div class="row">
-            <div class="col-12 ">
+            <div class="col-sm-12 col-md-12 ">
             <div class=" t1 text-center">
                <a href="2ndpage.html">
                <span></span>
@@ -53,6 +74,16 @@
             </div>
             </div>
         </div>
+        <div class="row ">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+             <marquee behavior="" direction="right">
+                <img src="image/dog3.gif" alt="">
+              </marquee>
+            <div class="road">
+
+            </div>
+        </div>
+       
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
