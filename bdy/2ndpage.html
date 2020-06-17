@@ -32,9 +32,15 @@
              transition: 1s;
              box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
          }
+         @media screen and (max-width: 480px) {
+            .card {
+                width: 200px;
+                height: 300px;
+            }
+        }
          .card:hover{
              
-            transform: perspective(2000px) /*rotate(-10deg)*/;
+            transform: perspective(2000px) rotate(-10deg);
             box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
          }
          .imgtxt{
@@ -60,16 +66,27 @@
          h3{
              background-color: white;
          }
+         #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+        }
      </style>
 </head>
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-md-12 col-sm-6">
                 <div class="card">
                     <div class="imgtxt">
-                        <img src="F:\download\thank-you.jpg" alt="imge">
-                        <h3>Happy birthday</h3>
+                        <img src="image/bdy11.jpg" alt="imge">
+                        
                     </div>
                     <div class="details">
                         <p>many many happy returns of the day god bless you your all wish
