@@ -3,33 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1stpage</title>
+    <title>Document</title>
     <style>
-        #myVideo{
-           width: 100%;
-           height: 100%;
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
         }
-        .cakeimage img{
+    body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          min-height: 100vh;
+          background: #010615;
+
+        }
+        .box{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            justify-content: center;
+          align-items: center;
+          margin: 40px;
+          transition: 0.5s;
+          background: #060c21;
+        }
+        .box:hover{
+            height: 400px;
+        }
+        .imgbx{
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
         }
+        .imgbx img{
+            max-width: 100%;
+            opacity: 0.1;
+            transition: 0.5s;
+        }
+        .box:hover .imgbx img{
+            opacity: 1;
+        }
+        .box:before{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #fff;
+            z-index:-1
+        }
+        .box:after{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: #fff;
+            z-index:-2;
+            filter: blur(40px);
+        }
+        .box::before,.box::after{
+            background: red;
+        }
+        .box:nth-child(2)::before,.box:nth-child(2)::after{
+            background: red;
+        }
+        .box:nth-child(3)::before,.box:nth-child(2)::after{
+            background: red;
+        }
+        .box:nth-child(4)::before,.box:nth-child(2)::after{
+            background: red;
+        }
+        .content{
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            height: 90px;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 0.5s;           
+        }
+        .box:hover .content{
+            opacity: 1;
+        }
+        .content h3{
+            /*font-size: 20px;*/
+            color: white;
+            line-height: 20px;
+        }
+        
     </style>
 </head>
 <body>
+        <div class="box">
+            <div class="imgbx">
+                <img src="image/sandesh1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>wish u many many happy birthday</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="image/sandesh1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>wish u many many happy birthdaywish u many many happy birthday
+                    wish u many many happy birthday
+                    wish u many many happy birthday
+                    wish u many many happy birthday
+                </h3>
+            </div>
+        </div><div class="box">
+            <div class="imgbx">
+                <img src="image/sandesh1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>wish u many many happy birthday</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbx">
+                <img src="image/sandesh1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="index3.html"><h3 style="color:white">Go Next</h3></a>
+            </div>
+        </div>
     
-      <video autoplay controls loop id="myVideo">
-        <source src="video/bdywish.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-      <div class="row">
-          <div class="col-sm-12 col-md-12">
-                <div class="cakeimage">
-                    <img src="image/cake2.gif" alt="">
-                </div>
-          </div>
-    </div>
-      <div>
-          <a href="index3.html"><h2>>></h2></a>
-      </div>
 </body>
 </html>
