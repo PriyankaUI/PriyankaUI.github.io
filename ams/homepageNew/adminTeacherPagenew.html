@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Teacher page New </title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+     <link href="../fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet">
+     <link href="../fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/headerAndFooter.css">
+      <link rel="stylesheet" href="css/styleadminpagenew.css">
+
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+     <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.js"></script>
+
+     <script type="text/javascript"src="js/deptreg.js"></script>
+      <script type="text/javascript" src="js/clock.js"></script>
+      
+</head>
+<body onLoad="initClock()">
+  <header class="header">
+		<nav class="navbar navbar-expand-lg  navbar-dark fixed-top  ">
+			<div class="container">
+			  <div class="navbar-brand ">
+	             <img src="image/fm.png" width="90" height="90" class="d-inline-block align-top" alt="">
+	              <span class="navbar-text" style="color:white">Fakir Mohan University<br> Balasore</label>
+	          </div>
+	          <div class=" clock justify-content-center" >
+	             <div class="clockbg">
+	                  <div id="timedate">
+	                       <a id="mon">January</a>
+	                       <a id="d">1</a>,
+	                       <a id="y">0</a><br />
+	                       <a id="h">12</a> :
+	                       <a id="m">00</a>:
+	                       <a id="s">00</a>
+	                    </div>
+	                  </div>
+	             </div>
+
+			  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			   <span class="navbar-toggler-icon "></span>
+			  </button>
+			  
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto  ">
+			      
+			      <li class="nav-item active">
+			       <span> <i class="fas fa-house-user"></i></span>&nbsp;&nbsp;<a class="" href="homepagenew.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <span><i class="fas fa-address-card"></i></span>&nbsp;&nbsp;<a class="" href="aboutpage">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <span><i class="fas fa-address-book"></i></span>&nbsp;&nbsp;<a class="" href="#">Contact</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+         </nav>
+     
+	<!--<img src="image/fmugate3.jpg" class="image-fluid" width="100%" height="30%">-->
+</header>
+<!---------------------------header end------------------------------------->
+<!---------------------------main div start------------------------------------->
+<main>
+<div class="container-fluid ">
+	<div class="row c1">
+		<!-----------------------left column------------------------------>
+          <div class="col-md-2 col-sm-12">
+            <div class="sidenav">
+                <div class="profileimg">
+                   <img src="image/bg7.jpg" class="rounded-circle img-fluid"><br>
+                   <!--<button type="button" class="btn btn-danger">Logout</button>-->
+                </div>
+                <div class="list">
+                      <ul><br><br>
+                          <li><a href="">Logout</a></li><br>
+                           <li><a href="">Teacher</a></li><br>
+                          <li><a href="">Student</a></li><br>
+                          <li><a href="">View Attendance</a> </li><br>
+                      </ul>
+                </div>
+              </div>
+        </div>
+         <!--------------------------- left column end------------------------->
+         <!----------------------------rigt column----------------------------> 
+          <div class="col-md-10 col-sm-12 ">
+            <div class="row mainbox">
+                 <div class="col-md-6 col-sm-12 ">
+                     <div class="box1 b1">
+                         <a data-toggle="modal" href="#addTeacherModal"><h4>Add Teacher</h4></a>
+                     </div>
+                 </div>
+                 <div class="col-md-6 col-sm-12 ">
+                      <div class="box1 b2">
+                         <a href=""><h4>Update Teacher</h4></a>
+                      </div>
+                 </div>
+                 <div class="  col-md-6 col-sm-12 " >
+                      <div class="box1 b3">
+                        <a href=""><h4>Delete Teacher</h4></a>
+                      </div>
+                 </div>
+                 <div class=" col-md-6 col-sm-12 ">
+                     <div class="box1 b4">
+                        <a href=""><h4>View Teacher</h4></a>
+                    </div>
+                 </div>
+              </div>
+          </div>
+        <!---------------------------right column end----------------------->
+	</div>
+</div>
+</main><br><br>
+<!---------------------------main div end------------------------------------->
+<!---------------------------add teacher modal------------------------------------->
+<div class="modal fade" id="addTeacherModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h2 class="login-text text-center">Add Teacher</h2> 
+                    <form class="form-container login-form" id="regForm">      
+                    <div class="form-group">
+                      <label>Teacher Name</label>
+                      <input type="text" class="form-control" id="tname" placeholder="Teacher Name" required >
+                    </div>
+                    <div class="form-group">
+                      <label>Course</label>
+                      <input type="text" class="form-control" id="tcrs" placeholder="course" required>
+                    </div>
+                    <div class="form-group">
+                      <label>Semestar</label>
+                       <select name="tsem" id="tsem">
+                              <option value="nill">select</option>
+                              <option value="mca">1st sem</option>
+                              <option value="msc">2nd sem</option>
+                              <option value="msc">3rd sem</option>
+                              <option value="msc">4th sem</option>
+                              <option value="msc">5th sem</option>
+                              <option value="msc">6th sem</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                      <label>Teacher ID</label>
+                      <input type="text" class="form-control" id="tid" placeholder="Teacher id" required>
+                    </div>
+                     <div class="form-group">
+                      <label>Password</label>
+                      <input type="password" class="form-control" id="tpwd" placeholder="password" required>
+                    </div>
+                    
+                    <div class="text-center">
+                      <button type="submit" class="addtchrbtn " data-target="">Add</button><br/><br/>
+                    </div>
+                    </form>
+                </div>
+            </div>   
+        </div>     
+    </div>
+<!---------------------------add teacher modal end--------------------------------->
+<footer>
+		@copyright2020FM University,All rights Reserved
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
