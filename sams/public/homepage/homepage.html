@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title> Home Page </title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
+     <link rel="stylesheet" href="../bootstrap-4.5.3/dist/css/bootstrap.min.css" >
+     <link href="../fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet">
+     <link href="../fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="../css/headerAndFooter.css">
+      <link rel="stylesheet" href="../css/homepage.css">
+      <link rel="stylesheet" href="../css/styleictdeptnew.css">
+
+      <script type="text/javascript" src="../js/clock.js"></script>
+     
+</head>
+<body onLoad="initClock()">
+	<div class="header">
+
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#0872CA;">
+     <!-- <div class="container">-->
+      <div class="navbar-brand" >
+        <img src="../images/fm.png" width="85" height="85" class="d-inline-block align-top" alt="fmu">
+        <span class="navbar-text" style="color:white;font-size: 18px;">Fakir Mohan University<br> Balasore</span>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <span> <i class="fas fa-house-user"></i></span>&nbsp;&nbsp;<a class="" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <span><i class="fas fa-address-card"></i></span>&nbsp;&nbsp;<a class="" href="aboutpage.html">About</a>
+          </li>
+          <li class="nav-item ">
+            <span><i class="fas fa-address-book"></i></span>&nbsp;&nbsp;<a class="" href="#">Contact</a>
+          </li>
+          
+        </ul>
+        
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+        </form>
+        <div class=" clock " >
+               <div class="clockbg">
+                    <div id="timedate">
+                         <a id="mon">January</a>
+                         <a id="d">1</a>,
+                         <a id="y">0</a><br/>
+                         <a id="h">12</a> :
+                         <a id="m">00</a>:
+                         <a id="s">00</a>
+                      </div>
+                    </div>
+               </div>
+      </div>
+    <!--</div>-->
+</nav>
+  <div class="container text-center headerset" >
+    <h1>Student Attendance Management System</h1>
+    <p>Maintains a quick and accurate record of attendance under different categories-day wise,subject wise and class wise and generates the complete report, which qualifies them to appear in the examination</p>
+
+  </div>
+</div>
+<!---------------------------header end-------------------------------------> 
+<main>
+  
+  <!----------------------------login section---------------------------------------->
+<section>
+  <div class="container">
+    <div class="row blocks">
+          <div class=" col-lg-4 col-md-4 col-sm-12">
+            <div class="loginblock">
+              <i class="fa-3x fas fa-user-shield bg-warning" aria-hidden="true"></i>
+              <p>Admin</p>
+              <button class="lbtn" data-toggle="modal" data-target="#adminLoginModal">Login</button>
+            </div>
+          </div>
+          <div class=" col-lg-4 col-md-4 col-sm-12">
+            <div class="loginblock">
+              <i class=" fa-3x fas fa-user-tie bg-warning" aria-hidden="true"></i>
+              <p>Teacher</p>
+              <button class="lbtn" data-toggle="modal" data-target="#teacherLoginModal">Login</button>
+              </div>
+          </div>
+          <div class="  col-lg-4 col-md-4 col-sm-12">
+            <div class="loginblock">
+              <i class=" fa-3x fas fa-user-graduate bg-warning" aria-hidden="true"></i>
+              <p>Student</p>
+              <button class="lbtn" data-toggle="modal" data-target="#stdLoginModal">Login </button>
+              </div>
+          </div>
+          
+        </div>
+  </div>     
+</section>
+<!--   ////////////////////////login section end//////////////////////////////////////////-->
+<!-------------------------------about section ------------------------------------------>
+<div class="about">
+
+  <div class="row ">
+    <div class="col-md-5 col-lg-5 col-sm-12 ">
+      <div class="image"><img src="../images/stdimg2.png"></div>
+    </div>
+    <div class="col-md-7 col-lg-7 col-sm-12 text-center r2">
+      <div class="text">
+      <h2>what is student attendance management system?</h2>
+      <p >Student Attendance is a attendance management software module. It is designed to handle the various attendance requirements of this university. From almost effortlessly recording attendance, to producing daily attendance bulletins and absentee record . Student Attendance module simplifies a wide range of  attendance tasks with ease.</p>
+
+        <p>One of the best feature of this software module is the online presence so the university can access all student and staff attendance data online or via hand-held devices.</p>
+
+       </div>
+    </div>
+  </div>
+
+</div>
+<!-------------------------------about section end------------------------------------------>
+<!---------------------------jumborton ------------------------------------->
+  <div class="container">
+  <div class=" jumbrton">
+    <div class="quote text-center">
+    <h2 class=""><i>"Say bye bye to Pen and Paper"</i></h2></div>
+  </div>
+</div>
+<!---------------------------jumbrton end------------------------------------->
+<!-------------------------------feature section ------------------------------------------>
+<div class='text-center feature'>
+  <h1>Key Features</h1>
+  <div class="container">
+    <div>
+        Accurate Student Attendance
+        Raw Data from device downloaded into system database and have accuracy of Student Attendance
+</div>
+<div>
+        Automatic SMS alert to parents
+        Set SMS templates in the system and define a auto task for automatic SMS alerts for absent/present to Parents mobile number
+</div>
+<div>
+        Daily Attendance Register
+        System keeps the records of Student's daily In-Out attendance logs and maintain the same in Daily Attendance Register
+</div>
+<div>
+
+        Monthly Attendance Register
+        System keeps the records of Student's daily In-Out attendance logs and maintain the same in Monthly Attendance Register as well
+  </div>
+</div>
+</div>
+<!-------------------------------feature section end------------------------------------------>
+<!---------------------------admin login modal start-------------------------->
+ <div class="modal fade" id="adminLoginModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h2 class="login-text text-center">Admin Login</h2> 
+                    <form class="form-container login-form" id="adminloginForm">      
+                    <div class="form-group">
+                      <label>Admin Id</label>
+                      <input type="text" class="form-control" id="adminid" placeholder="Admin ID" required >
+                    </div>
+                    <div class="form-group">
+                      <label>Password</label>
+                      <input type="password" class="form-control" id="adminpswd" placeholder="password" required>
+                      <!--<span><i class="fas fa-eye"></i></span>
+                      <i class="fas fa-eye-slash"></i>-->
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="check1">
+                      <label class="form-check-label" for="exampleCheck1">remember me</label>
+                    </div>
+                    <div class="text-center">
+                    <button id="adminloginbtn"  class="loginbtn" onclick="validateAdmin()">Login</button><br/><br/>
+                    <div class="invaliddata">
+                       id or password is incorrect,please try again later
+                    </div>
+                    <div><a data-toggle="modal" href="#forgotPasswordModal">Forgot Password</a></div></div>
+                    </form>
+                </div>
+            </div>   
+        </div>     
+    </div>
+<!---------------------------admin login modal end---------------------------->
+<!-----------------------admin forgotPassword modal --------------------------->
+
+<!----------------------admin forgotPassword modal end------------------------>
+<!---------------------------Teacher login modal start-------------------------->
+ <div class="modal fade" id="teacherLoginModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h2 class="login-text text-center">Teacher Login</h2> 
+                    <form class="form-container login-form" id="tchrloginForm">      
+                    <div class="form-group">
+                      <label>Teacher Id</label>
+                      <input type="text" class="form-control" id="tchrid" placeholder="Teacher ID" required >
+                    </div>
+                    <div class="form-group">
+                      <label>Password</label>
+                      <input type="password" class="form-control" id="tchrpwd" placeholder="password" required>
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="Check2">
+                      <label class="form-check-label" for="exampleCheck1">remember me</label>
+                    </div>
+                    <div class="text-center">
+                    <button id="tchrloginbtn"  class="loginbtn " onclick="validateTeacher()">Submit</button><br/><br/>
+                    <div class="invaliddata">
+                       id or password is incorrect,please try again later
+                    </div>
+                    <div>
+                      <a data-toggle="modal" href="#forgotPasswordModal">Forgot Password</a></div></div>
+                    </form>
+                </div>
+            </div>   
+        </div>     
+    </div>
+<!---------------------------Teacher login modal end---------------------------->
+<!-----------------------Teacher forgotPassword modal --------------------------->
+
+<!----------------------Teacher forgotPassword modal end------------------------>
+
+<!---------------------------student login modal start-------------------------->
+<div class="modal fade" id="stdLoginModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h2 class="login-text text-center">Student Login</h2>
+                    <form class="form-container login-form" id="regForm">      
+                    <div class="form-group">
+                      <label>Student Id</label>
+                      <input type="text" class="form-control" id="stdid" placeholder="Student ID" required >
+                    </div>
+                    <div class="form-group">
+                      <label>Password</label>
+                      <input type="password" class="form-control" id="stdpwd" placeholder="password" required>
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="check3">
+                      <label class="form-check-label" for="exampleCheck1">remember me</label>
+                    </div>
+                    <div class="text-center">
+                    <button id="stdlogibtn" onclick="validateStudent()" type="submit" class="loginbtn " >Submit</button><br><br>
+                    <div class="invaliddata">
+                       id or password is incorrect,please try again later
+                    </div></div>
+                    <div id="signupbtn" class="signupbtn"style="cursor: pointer;float: left;color:blue;">signup</div>
+                    <span><a data-toggle="modal" href="#stdrgstrsuccesfulModal" style="float: right;">Forgot Password</a></span>
+                    </form>
+                </div>
+            </div>   
+        </div>     
+    </div>
+<!---------------------------student login modal end---------------------------->
+<!---------------------------student register modal start-------------------------->
+  <div class="modal fade" id="stdSignupModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" style="height:550px;">
+            <div class="modal-content">
+                <!-- -----------Modal body ------------>
+                <div  class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button><br/>
+                   <h2 class="signup-txt">Sign Up To Create Account</h2>
+                   <div class="container">
+                   <!--<div class="col-lg-5">-->
+                    <form class="form-horizontal" action="" method="POST" id="myform">
+
+                       <fieldset id="persional_information" class="">
+                        <legend class="signup-legend">Personal information</legend>
+                          <div class="form-group">
+                            <label for="sname"class="fieldlabels">Name: *</label>
+                             <input type="text" name="name" id="name" placeholder="Full Name" onkeypress="return nameValidate(event)" />
+                           </div>
+
+                           <div class="form-group">
+                             <label for="fname" class="fieldlabels">Father's Name: *</label>
+                             <input type="text" name="faname" id="faname" placeholder="Father's Name" onkeypress="return nameValidate(event)" />
+                            </div>
+
+                            <div class="form-group">
+                              <label for="mname" class="fieldlabels">Mother's Name: *</label> 
+                              <input type="text" name="mname" id="mname" placeholder="Mother's Name" / onkeypress="return nameValidate(event)">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="address" class="fieldlabels"> Address: *</label>
+                                <textarea id="textarea" class="form-control"rows="" id="praddr" placeholder="Present Address"></textarea>
+                            </div>
+
+                             <div class="form-group">
+                              <label for="contact" class="fieldlabels">Contact No.: *</label> 
+                              <input type="text" name="phno" id="phno" placeholder="Contact No." onkeypress="return cnoValidate(event)" />
+                              </div>
+
+                             <div class="form-group">
+                               <label for="gender" class="fieldlabels">Gender : </label>
+                                &nbsp;<input type="radio" name="gender" id="radio" value="male">M
+                                &nbsp;<input type="radio" name="gender" id="radio"value="female">F
+                                &nbsp;<input type="radio" name="gender" id="radio"value="other">O<br/>
+                             </div>
+                             <a><input type="button" value="Next" class="next nxtbtn" name=""></a>
+                        </fieldset>
+
+                        <fieldset id="academic_information" class="">
+                           <legend class="signup-legend"> Academic information</legend>
+                             <div class="form-group">
+                                <label for="sem">Semestar</label>
+                                    <select name="sem" id="sem">
+                                     <option value="nill">select</option>
+                                     <option value="1st sem">1st sem</option>
+                                     <option value="2nd sem">2nd sem</option>
+                                     <option value="3rd sem">3rd sem</option>
+                                     <option value="4th sem">4th sem</option>
+                                     <option value="5th sem">5th sem</option>
+                                     <option value="6th sem">6th sem</option>
+                                    </select><br><br></div>
+                              <div class="form-group">
+                                <label for="course">Course</label>
+                                    <select name="crs" id="crs">
+                                     <option value="nill">select</option>
+                                     <option value="mca">MCA</option>
+                                     <option value="msc">M.Sc(it)</option>
+                                    </select>
+                              </div>
+             
+                             <div class="form-group">
+                                <label for="examRollno">Exam RollNo.</label>
+                                 <input type="text"  class="form-control"id="examrollno" title="Enter the no given by university" placeholder="Exam Roll No"></div>
+                           
+                              <div class="form-group">
+                               <label for="classRollno">Class RollNo.</label>
+                                 <input type="text"  class="form-control"id="classrollno" title="Enter the no given by university" placeholder="Class RollNo"></div>
+                           
+                              <div class="form-group">
+                                 <label for="registrationno">Registration No.</label>
+                                  <input type="text"  class="form-control"id="registrationno" title="Enter the no given by university" placeholder="Registration No">
+                             </div>
+                    
+                    <a><input type="button" value="Next" class="next nxtbtn" name=""></a>
+                    <p><input type="button" value="Previous" class="prvsbtn"></p>
+                  </fieldset>
+
+                  <fieldset id="account_information" class="">
+                    <legend class="signup-legend">Account information</legend>
+                     <div class="form-group">
+                                <label for="email" class="fieldlabels">Email: *</label>
+                                 <input type="email" name="email" id="email"placeholder="Email Id" />
+                               </div>
+                              <div class="form-group"> 
+                                <label for="pswd" class="fieldlabels">Password: *</label>
+                                 <input type="password" name="pswd" id="pswd" placeholder="Password" /> 
+                               </div>
+
+                               <div class="form-group">
+                                <label for="cpswd" class="fieldlabels">Confirm Password: *</label>
+                                 <input type="password" name="cpwd"id="cpwd" placeholder="Confirm Password" />
+                              </div> 
+                              <div class="form-group"> 
+                                <label for="photo" class="fieldlabels">Upload Your Photo:</label> 
+                                <input type="file" name="pic" id="pic" accept="image/*"/>
+                                <!--<img id="blah"src="http:placehold.it/180" alt="your image"/>-->
+                                </div>
+                        <!--<input type="button" name="next" class="next action-button " value="Next "/>-->
+                                <button class="submit-btn" id="stdsignupbtn" data-toogle="modal" >Submit</button>
+                                <a><input type="button" value="Previous" id="previous" class="prvsbtn"></a>
+                                <button id="preview"class="Preview-btn" data-toggle="modal" >Preview</button>                           
+                          </fieldset>
+                     </form>
+                    </div><!--container div end-->
+                </div><!-- modal-body end-->
+            </div><!-- modal-content end-->
+        </div><!-- modal-dialog end-->
+    </div>  <!-- modal end-->
+<!---------------------------student register modal end---------------------------->
+<!---------------------------student preview modal start----------------------------> 
+  <div class="modal fade" id="stdPreviewModal">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable" style="height:550px;">
+            <div class="modal-content">
+              <div class="modal-header">        
+                  <h2 style="color:blueviolet">Student Details </h2>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button><br/>
+              </div>                
+                <div class="modal-body" >
+                  <div id="previewbox">
+                    
+                  </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button class="okbtn">ok</button>
+                  
+                </div>
+            </div>
+        </div>
+   </div>
+<!---------------------------student preview modal end---------------------------->
+
+<!-----------------------student register successful modal --------------------------->
+ <div class="modal fade" id="stdrgstrsuccesfulModal">
+      <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button><br/>
+                  <div>
+            <h2 class="text-center">successfully Registered</h2>
+            <div style="margin-left: 150px;">
+              <img src="image/tick1.gif" style="width:100px;height:100px"></div><br>
+                    <div class="text-center" style="font-size: 20px;color:blue"><a>click here to login</a></div>
+                  </div>
+                </div>
+            </div>   
+        </div>     
+    </div>
+<!----------------------student register successful modal end------------------------>
+<!-----------------------student forgotPassword modal --------------------------->
+
+<!----------------------student forgotPassword modal end------------------------>
+     <footer>
+      <p class="float-right"><a href="#">Back to top</a></p>
+		@copyright2020FM University,All rights Reserved
+     </footer>
+</main>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="../bootstrap-4.5.3/dist/js/bootstrap.min.js"></script>
+</html>
