@@ -43,4 +43,11 @@ footer{
   padding: 20px 20px;
   
 }
+.fa-chevron-up{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+   text-align: center;
+   padding-top: 5px;
+}
 /*****************************footer End****************************** */
