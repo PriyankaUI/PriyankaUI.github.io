@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title> My Account </title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
+     <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet">
+     <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+
+     <style type="text/css">
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .text{
+
+        padding: 20px;
+        
+      }
+      .myaccount{
+        background: #0872CA;
+        height: 50vh;
+        width: 100%;
+        text-align: center;
+        color: white;   
+        
+      }
+      .myaccount p{
+        font-size: 25px;
+      }
+      /*.myaccount img{
+        height: 120px;
+        width:120px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15%;
+        left: 45%;
+      }*/
+
+      .fa-user-circle{
+        color:white;
+        padding-top: 30px;
+        
+       
+      }
+       .fa-house-user,.fa-arrow-left{
+        color: white;
+        position: absolute;
+        border:1px solid black;
+        padding: 10px;
+        top: 30%;
+      }
+       .fa-house-user{
+        
+        right:10%;
+      }
+      .fa-arrow-left{
+        
+        left:10%;
+      }
+      .blocks{
+        padding: 50px 0;
+        background: whitesmoke;
+        width: 100%;
+      }
+      .b{
+        margin: 20px;
+      }
+.fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card{
+   color: #0872CA;
+   width: 90px;
+   height: 90px;   
+   padding-top:20px; 
+   text-align: center;  
+
+}
+.block{
+   text-align: center;
+  background: #fff;
+  border: medium none;
+  padding: 40px;
+  margin: 10px 0;
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+  
+}
+
+.block p{
+  font-size: 20px;
+  color: black;
+}
+.lbtn{
+  border:1px solid white;
+  color:white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+
+}
+@media (max-width: 575px) {
+  .fa-house-user{
+        top:25%;
+        right:5%;
+        
+      }
+      .fa-arrow-left{
+         top:25%; 
+        left:5%;
+      }
+}
+
+     </style>
+     
+</head>
+<body>
+  <main>
+    <section>
+      <div class="text">  
+        <h3 class="text-center" style="color: black;padding-top:0px;">My Account</h3> 
+      </div>
+      
+    <div class="myaccount">  
+      
+      <a href=""><i class="fa-2x fas fa-arrow-left " aria-hidden="true"></i></a>
+       <!-- <img src="avtar.png"alt="avatar">-->
+       <i class="fa-7x fas fa-user-circle " aria-hidden="true"></i>
+        <a href=""><i class="fa-2x fas fa-house-user"aria-hidden="true"></i></a>
+        <p>Priyanka Pradhan</p>
+        <p>7008943631</p>
+        <button class="btn lbtn" type="submit">Logout</button>
+        </div>
+    </section>
+       
+ <div class="blocks">
+    <div class="row b"> 
+      <div class=" col-lg-4 col-md-4 col-sm-12">
+            <div class="block">
+              <div><i class="fa-3x fas fa-home " aria-hidden="true"></i></div>
+              <h3> My Bookings</h3>
+              <p><a href="">View properties you booked</a></p>   
+            </div>
+      </div>
+      <div class=" col-lg-4 col-md-4 col-sm-12 ">
+            <div class="block">
+              <div><i class="fa-3x fas fa-calendar-check " aria-hidden="true"></i></div>
+              <h3>My Appointments</h3>
+              <p><a href="">View services you booked</a></p>
+            </div>
+      </div>
+      <div class=" col-lg-4 col-md-4 col-sm-12">
+            <div class="block">
+              <i class="fa-3x fas fa-clock " aria-hidden="true"></i>
+              <h3>24/7 Help</h3>
+              <p><a href="">Raise and issue</a></p>
+            </div>
+      </div>
+      <div class=" col-lg-2 col-md-2 col-sm-12">
+            
+      </div>
+      <div class=" col-lg-4 col-md-4 col-sm-12">
+            <div class="block">
+              <i class="fa-3x fas fa-check " aria-hidden="true"></i>
+              <h3>Sheltown Verified</h3>
+              <p><a href="">Verify yourself</a></p>
+            </div>
+      </div>
+      
+      
+      <div class=" col-lg-4 col-md-4 col-sm-12">
+           <div class="block">
+              <i class="fa-3x fas fa-credit-card " aria-hidden="true"></i>
+              <h3>Transaction Details</h3>
+              <p><a href="">View</a></p>
+            </div>
+      </div>
+
+    </div>
+     </div> 
+   </main>
+</body>
+</html>
