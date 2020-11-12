@@ -1,0 +1,20 @@
+/*-------mixin-------------------------------------*/
+@mixin title($font-size){
+    color: $primaryclr;
+    font-size:$font-size ;
+    font-family: 'Lobster', cursive;
+    padding-bottom: 20px;
+  
+  }
+  @mixin subtitle{
+      text-transform: uppercase; 
+      font-size: 18px;
+    }
+    @mixin middle{
+      position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+    }
+  
+  /*-------mixin end-------------------------------------*/

@@ -1,0 +1,134 @@
+@import 'typography';
+@import 'reset';
+@import 'mixin';
+
+
+
+header{
+    background-color:$primaryclr;
+    .logo{
+        font-size: 30px;
+        font-family: 'Lobster', cursive;
+    }
+    .menu{
+        padding-top: 10px;
+        ul{
+            li{
+                list-style: none;
+                display: inline-block;
+                a{
+                    
+                    color: $menuclr;
+                    padding: 0px 10px;
+                    transition: 0.5s;
+                    @include subtitle;
+                    &:hover{
+                        color: black;
+                    }
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+}
+.main_content{
+    background: url(../image/p2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
+   
+    position: relative;
+    .main_content_wrapper{
+        @include middle;
+        h1{
+            color:$primaryclr;
+            
+            font-family: 'Lobster', cursive;
+            @include title(100px);
+        }
+        h5{
+            @include subtitle;
+        }
+    }
+}
+/*-----------portfolio-----------------*/
+.portfolio_section{
+    .portfolio_title{
+        padding: 30px 0;
+         h1{
+            @include title(50px);
+         }
+         h5{
+             @include subtitle;
+         }
+    }
+    .portfolio_content{
+        .portfolio_upper{
+            margin-bottom: 20px;    
+         }
+        img{
+           height: 250px;
+           width: 350px;
+        }
+        
+        .overlay-relative{
+           position: relative;
+          overflow: hidden;
+          &:hover .over-lay{
+            top: 0;
+            cursor: pointer;
+        }
+           
+        }
+        .over-lay{
+            background-color: #281818c4;
+            position: absolute;
+            left: 15px;
+            right: 0;
+            top:-100%;
+            /*width: 350px;
+            height: 250px;*/
+            width: 92%;
+            height: 100%;
+            transition: 0.5s;  
+            p{
+                color:$menuclr ;
+                padding: 40px;
+            }
+        }
+    }
+}
+/*---------contact section--------------------------*/
+.contact_section{
+    background-color: #0d0000;
+    height: 20vh;
+    position: relative;
+    button{
+        background-color:transparent ;
+        border: 1px solid $primaryclr;
+        color: $menuclr;
+        padding:10px 20px;
+       @include middle;
+        
+        &:hover::after{
+            transform: scaleX(1);
+        }
+        &::after{
+            content: '';
+            background-color:$primaryclr ;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin:(0 0) ;
+            transition: 0.5s;
+        }
+    }
+}
