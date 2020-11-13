@@ -137,7 +137,10 @@
   transform-origin: 0 0;
   transition: 0.5s;
 }
-      @media (max-width: 600px) {
+.mobview{
+  display: none;
+}
+      @media (max-width: 600px){
        .logo{
         display: none;   
       } 
@@ -147,6 +150,22 @@
       .b{
         margin-top: 10px;
       }
+    
+    .myaccount{  
+        height: 35vh; 
+      }
+      .myaccount p{
+        font-size: 22px;
+      }
+      .fa-user-circle{
+        padding-top: 20px;
+      }
+      .blocks{
+        display: none;
+      }
+      .mobview{
+  display: block;
+}
     }
      </style>
      
@@ -199,8 +218,6 @@
               <p><a href="">Verify yourself</a></p>
             </div>
       </div>
-      
-      
       <div class=" col-lg-4 col-md-4 col-sm-12">
            <div class="block b5 ">
               <i class="fa-3x fas fa-credit-card " aria-hidden="true"></i>
@@ -210,6 +227,47 @@
       </div>
     </div>
      </div> 
+     <!------------------------mobile view -->
+     <div class="mobview">
+       <div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h3> My Bookings</h3>
+                <hr>
+                <p><a href="">View properties you booked</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3>My Appointments</h3><hr>
+                <p><a href="">View services you booked</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3>24/7 Help</h3><hr>
+                <p><a href="">Raise and issue</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3>Sheltown Verified</h3><hr>
+                <p><a href="">Verify yourself</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3>Transaction Details</h3><hr>
+                <p><a href="">View </a></p>
+              </div>
+            </div>
+          </div>
+          </div>
+       </div>
+     </div>
+   </div>
      <!----------------------card section end---------------------------------------------------->
      <!----------------------logout section---------------------------------------------------->
      <div class="logout_section ">
