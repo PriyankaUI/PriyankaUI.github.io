@@ -19,13 +19,13 @@
       header{
         background: #2ECAB6;
         height: 7vh;
-         padding: 5px 35px;
+        padding: 5px 35px;
        /* display: flex;justify-content: space-between;*/
       }
-      .logo{
+      /*.logo{
         width: 20%;
         margin-top: 0px;   
-      }
+      }*/
       .logo h3{
         font-style: 'ITC Officina Sans Std Book';
         font-size: 25px;
@@ -41,16 +41,14 @@
         top:5px;
         width: 50%;
       }
-      .icon{
-        /*width: 10%;*/
-      }
       .fa-arrow-left,.fa-house-user{
          color: white;
          position: absolute;
-         top: 25px;
+         top: 20px;
       }
       .fa-arrow-left{
         left: 20%;
+        display: none;
       }
       .fa-house-user{
         right: 5%;
@@ -147,35 +145,29 @@
   display: none;
 }
       @media (max-width: 600px){
-        header{
-          height: 8vh;
+        header{ 
           padding: 10px;
-        }
-        .text{
-           
-        }
-        .text h3{
-          font-size: 22px;
         }
        .logo{
         display: none;   
       } 
        .fa-arrow-left{
+        top: 10px;
         left: 5%;
+        display: block;
       }
-      .fa-arrow-left,.fa-house-user{
-        font-size: 25px !important;
-        
+      .fa-arrow-left{
+        font-size: 25px !important;   
       }
     .myaccount{  
-        height: 28vh; 
+        height: 26vh; 
       }
       .myaccount p{
         font-size: 20px;
       }
       .fa-user-circle{
         padding-top: 20px;
-        font-size: 80px;
+        font-size: 70px;
       }
       .blocks{
         display: none;
@@ -211,8 +203,8 @@
   <main>
       <header>
           <div class="logo"><h3><a href="">SHELTOWN.in</a></h3></div>
-          <!--<div class="icon" ><a href=""><i class="fa-2x fas fa-arrow-left " aria-hidden="true"></i></a></div>
-          <div class="icon" ><a href=""><i class="fa-2x fas fa-house-user"aria-hidden="true"></i></a></div>-->
+          <div class="icon" ><a href=""><i class="fa-2x fas fa-arrow-left " aria-hidden="true"></i></a></div>
+          <!--<div class="icon" ><a href=""><i class="fa-2x fas fa-house-user"aria-hidden="true"></i></a></div>-->
           <div class="text text-center"><h4 class="text-center" style="color: black;padding-top:0px;">My Account</h4> </div> 
           
      </header> 
