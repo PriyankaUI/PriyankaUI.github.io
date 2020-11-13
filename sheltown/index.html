@@ -18,23 +18,25 @@
       header{
         background: #2ECAB6;
         padding: 20px;
-        height: 15vh;
+        height: 10vh;
        /* display: flex;justify-content: space-between;*/
       }
       .logo{
         width: 20%;
         margin-top: -5px;   
       }
+      .logo h3{
+        font-style: 'ITC Officina Sans Std Book';
+      }
       .text{
        position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top:25px;
+        top:10px;
         width: 50%;
       }
       .icon{
-        background: yellow;
-        width: 10%;
+        /*width: 10%;*/
       }
       .fa-arrow-left,.fa-house-user{
          color: white;
@@ -65,15 +67,15 @@
       }
       /*----------------------------card section-------------------------*/
       .blocks{
-        padding: 50px 0;
+        padding: 10px 0;
         background: white;
         width: 100%;
       }
       .b{
-        margin: 20px;
+        margin:10px;
       }
 .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card{
-   color: #444;
+   color: #2ECAB6;
    width: 90px;
    height: 90px;  
    border-radius: 50%;
@@ -106,15 +108,13 @@
 /*---------logout section--------------------------*/
 .logout_section {
   background-color: #2ECAB6;
-  height: 15vh;
-
-  
+  height: 10vh; 
 }
 .logout_section button {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
-  padding: 10px 25px;
+  padding: 5px 25px;
   position: relative;
   top:50%;
   left: 50%;
@@ -141,21 +141,35 @@
   display: none;
 }
       @media (max-width: 600px){
+        header{
+          height: 8vh;
+          padding: 10px;
+        }
+        .text{
+           
+        }
+        .text h3{
+          font-size: 22px;
+        }
        .logo{
         display: none;   
       } 
        .fa-arrow-left{
         left: 5%;
       }
-      
+      .fa-arrow-left,.fa-house-user{
+        font-size: 25px !important;
+        
+      }
     .myaccount{  
-        height: 35vh; 
+        height: 28vh; 
       }
       .myaccount p{
-        font-size: 22px;
+        font-size: 20px;
       }
       .fa-user-circle{
         padding-top: 20px;
+        font-size: 80px;
       }
       .blocks{
         display: none;
@@ -164,11 +178,18 @@
           display: block;
           background: whitesmoke;
        }
-.card p{
-  float: right;
-}
-.card{
-  margin: 10px 5px;
+      .card p{
+        float: right;
+      }
+      .card{
+        margin: 5px 5px;
+      }
+      .logout_section{
+         height: 10vh;
+      }
+      .logout_section button {
+       padding: 5px 25px; 
+       font-size: 18px;
 }
     }
      </style>
@@ -177,10 +198,11 @@
 <body>
   <main>
       <header>
-          <div class="logo"><img src="logo.png" style="width:120px; height:60px" alt="sheltown"></div>
-          <div class="icon" ><a href=""><i class="fa-2x fas fa-arrow-left " aria-hidden="true"></i></a></div>
+          <div class="logo"><h3>SHELTOWN.in</h3></div>
+          <!--<div class="icon" ><a href=""><i class="fa-2x fas fa-arrow-left " aria-hidden="true"></i></a></div>
+          <div class="icon" ><a href=""><i class="fa-2x fas fa-house-user"aria-hidden="true"></i></a></div>-->
           <div class="text text-center"><h3 class="text-center" style="color: black;padding-top:0px;">My Account</h3> </div> 
-          <div class="icon" ><a href=""><i class="fa-2x fas fa-house-user"aria-hidden="true"></i></a></div>
+          
      </header> 
     <div class="myaccount">      
        <!-- <img src="avtar.png"alt="avatar">-->
