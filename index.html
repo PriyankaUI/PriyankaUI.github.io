@@ -18,52 +18,41 @@
       header{
         background: #2ECAB6;
         padding: 20px;
-        height: 15vh;
-       /* display: flex;justify-content: space-between;*/
-      }
-      .logo{
-        width: 20%;
-        margin-top: -5px;   
-      }
-      .text{
-       position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top:25px;
-        width: 50%;
-      }
-      .icon{
-        background: yellow;
-        width: 10%;
-      }
-      .fa-arrow-left,.fa-house-user{
-         color: white;
-         position: absolute;
-         top: 25px;
-      }
-      .fa-arrow-left{
-        left: 20%;
-      }
-      .fa-house-user{
-        right: 5%;
+        
       }
       .myaccount{
-        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url("town1.png");
+        background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url("town2.png");
         height: 50vh;
         width: 100%;
         background-repeat: no-repeat;
         background-size: 100% 100%;
         text-align: center;
-        color: white;    
+        color: white;   
+        
       }
       .myaccount p{
         font-size: 25px;
       }
+      
+
       .fa-user-circle{
         color:white;
-        padding-top: 50px;
+        padding-top: 30px;
+        
+       
       }
-      /*----------------------------card section-------------------------*/
+       .fa-house-user,.fa-arrow-left{
+        color: white;
+        position: relative;
+        border:1px solid black;
+        
+      }
+       .fa-house-user{
+        right:10%;
+      }
+      .fa-arrow-left{   
+        left:10%;
+      }
       .blocks{
         padding: 50px 0;
         background: whitesmoke;
@@ -73,60 +62,90 @@
         margin: 20px;
       }
 .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card{
-   color: #444;
+   color: #0872CA;
    width: 90px;
-   height: 90px;  
-   border-radius: 50%;
-   background: white; 
+   height: 90px;   
    padding-top:20px; 
    text-align: center;  
 
 }
 .block{
-  text-align: center;
+   text-align: center;
   background: #fff;
   border: medium none;
-  padding: 10px 0;
+  padding: 40px;
   margin: 10px 0;
   border-radius: 3px;
   width: 100%;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3); 
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+  
 }
 
 .block p{
   font-size: 20px;
   color: black;
 }
-.b1{background: linear-gradient(90deg, rgba(255,185,208,1) 0%, rgba(145,255,202,1) 45%, rgba(147,237,255,1) 100%);}
-.b2{background: linear-gradient(90deg, rgba(235,185,255,1) 0%, rgba(145,255,202,1) 45%, rgba(255,181,76,1) 100%);}
-.b3{background: linear-gradient(90deg, rgba(116,255,115,1) 0%, rgba(145,255,202,1) 45%, rgba(243,88,88,1) 100%);}
-.b4{background: linear-gradient(90deg, rgba(251,228,120,1) 0%, rgba(145,255,202,1) 45%, rgba(228,157,242,1) 100%);}
-.b5{background: linear-gradient(90deg, rgba(190,181,247,1) 0%, rgba(145,255,202,1) 45%, rgba(249,159,48,1) 100%);}
+.lbtn{
+  border:1px solid white;
+  color:white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 18px;
 
-/*---------logout section--------------------------*/
+}
+@media (max-width: 575px) {
+  .myaccount{
+        
+        height: 30vh;
+        width: 100%;
+        text-align: center;
+        color: white;   
+        
+      }
+      .myaccount p{
+        font-size: 20px;
+      }
+      .fa-user-circle{
+        color:white;
+        padding-top: 20px;
+        height: 50px;
+        width:50px; 
+        text-align: center; 
+       
+      }
+  .fa-house-user{
+        top:25%;
+        right:5%;
+        
+      }
+      .fa-arrow-left{
+         top:25%; 
+        left:5%;
+      }
+}
+/*---------contact section--------------------------*/
 .logout_section {
-  background-color: #2ECAB6;
+  background-color: #444;
   height: 15vh;
 
   
 }
 .logout_section button {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #5ec7f8;
   color: #fff;
-  padding: 10px 25px;
+  padding: 10px 20px;
   position: relative;
   top:50%;
   left: 50%;
   transform: translate(-50%, -50%); 
-  font-size: 20px;
 }
 .logout_section button:hover::after {
   transform: scaleX(1);
 }
 .logout_section button::after {
   content: "";
-  background-image: linear-gradient(to left,#db3721,#e81313,#fbfc45);
+  background-color: #5ec7f8;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -137,27 +156,18 @@
   transform-origin: 0 0;
   transition: 0.5s;
 }
-      @media (max-width: 600px) {
-       .logo{
-        display: none;   
-      } 
-       .fa-arrow-left{
-        left: 5%;
-      }
-      .b{
-        margin-top: 10px;
-      }
-    }
+
      </style>
      
 </head>
 <body>
   <main>
-      <header>
-          <div class="logo"><img src="logo.png" style="width:120px; height:60px" alt="sheltown"></div>
-          <div class="icon" ><a href=""><i class="fa-2x fas fa-arrow-left " aria-hidden="true"></i></a></div>
-          <div class="text text-center"><h3 class="text-center" style="color: black;padding-top:0px;">My Account</h3> </div> 
-          <div class="icon" ><a href=""><i class="fa-2x fas fa-house-user"aria-hidden="true"></i></a></div>
+      <header>  
+        <div class="logo"><img src="logo.png" width="100" height="60" class="d-inline-block align-top" alt="sheltown"></div>
+        <div><h3 class="text-center" style="color: black;padding-top:0px;">My Account</h3> </div>
+        <div><ul><li><a href=""><i class="fa-2x fas fa-arrow-left " aria-hidden="true"></i></a></li>
+        <li><a href=""><i class="fa-2x fas fa-house-user"aria-hidden="true"></i></a></li></ul></div>
+      </div>
      </header> 
     <div class="myaccount">      
        <!-- <img src="avtar.png"alt="avatar">-->
@@ -165,25 +175,26 @@
         <p>Priyanka Pradhan</p>
         <p>7008943631</p> 
     </div>
-    <!----------------------card section---------------------------------------------------->
-    <div class="blocks">
+    
+       
+ <div class="blocks">
     <div class="row b"> 
       <div class=" col-lg-4 col-md-4 col-sm-12">
-            <div class="block b1">
+            <div class="block">
               <div><i class="fa-3x fas fa-home " aria-hidden="true"></i></div>
               <h3> My Bookings</h3>
               <p><a href="">View properties you booked</a></p>   
             </div>
       </div>
       <div class=" col-lg-4 col-md-4 col-sm-12 ">
-            <div class="block b2">
+            <div class="block">
               <div><i class="fa-3x fas fa-calendar-check " aria-hidden="true"></i></div>
               <h3>My Appointments</h3>
               <p><a href="">View services you booked</a></p>
             </div>
       </div>
       <div class=" col-lg-4 col-md-4 col-sm-12">
-            <div class="block b3">
+            <div class="block">
               <i class="fa-3x fas fa-clock " aria-hidden="true"></i>
               <h3>24/7 Help</h3>
               <p><a href="">Raise and issue</a></p>
@@ -193,7 +204,7 @@
             
       </div>
       <div class=" col-lg-4 col-md-4 col-sm-12">
-            <div class="block b4">
+            <div class="block">
               <i class="fa-3x fas fa-check " aria-hidden="true"></i>
               <h3>Sheltown Verified</h3>
               <p><a href="">Verify yourself</a></p>
@@ -202,21 +213,18 @@
       
       
       <div class=" col-lg-4 col-md-4 col-sm-12">
-           <div class="block b5 ">
+           <div class="block">
               <i class="fa-3x fas fa-credit-card " aria-hidden="true"></i>
               <h3>Transaction Details</h3>
               <p><a href="">View</a></p>
             </div>
       </div>
+
     </div>
      </div> 
-     <!----------------------card section end---------------------------------------------------->
-     <!----------------------logout section---------------------------------------------------->
      <div class="logout_section ">
         <button>Logout</button>
     </div>
-       
- 
    </main>
 </body>
 </html>
