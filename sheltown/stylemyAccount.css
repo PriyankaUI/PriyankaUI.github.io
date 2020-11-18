@@ -20,6 +20,9 @@
     .logo,.menu{
       height: 8vh;
     }
+    .logo{
+      padding-top: 5px;
+    }
       .logo a{
       	text-decoration: none;
       	font-size: 20px;
@@ -30,6 +33,7 @@
       .logo p{
         font-size: 16px; 
         margin-top: -10px;
+        color: red;
       }
       .menu ul{
       display: flex;
@@ -47,6 +51,9 @@
         display: none;
        }
  @media (max-width: 600px){
+  .navbar{
+        padding: 5px 20px; 
+      }
        .text{
         display: block;
         color:white;
@@ -64,7 +71,7 @@
         color: white;
         text-align: center; 
         background: #2ECAB6;
-        height: 28vh;
+        height: 26vh;
 
       }
       .myaccount h4{
@@ -72,8 +79,8 @@
         font-size: 23px;
       }
       .fa-user-circle{
-        padding-top: 35px;
-        font-size: 70px;
+        padding-top: 30px;
+        font-size: 80px;
       }
       
       .card p{
