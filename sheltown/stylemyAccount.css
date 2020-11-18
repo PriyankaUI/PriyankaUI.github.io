@@ -9,17 +9,14 @@
   }
      /*------------------------------------header section----------------------------------------*/
       header{
-      	height:8.4vh;
+      	height:8vh;
         width: 100%;
       }
       .navbar{
         background: #2ECAB6;
         padding: 5px 50px;
-        height:8.5vh;
+        height:8.1vh;
       }
-    .logo,.menu{
-      height: 8vh;
-    }
     .logo{
       padding-top: 5px;
     }
@@ -33,7 +30,8 @@
       .logo p{
         font-size: 16px; 
         margin-top: -10px;
-        color: red;
+        color: white;
+        font-weight: 200;
       }
       .menu ul{
       display: flex;
@@ -52,7 +50,7 @@
        }
  @media (max-width: 600px){
   .navbar{
-        padding: 5px 20px; 
+        padding: 5px 25px; 
       }
        .text{
         display: block;
@@ -71,7 +69,7 @@
         color: white;
         text-align: center; 
         background: #2ECAB6;
-        height: 26vh;
+        height: 25vh;
 
       }
       .myaccount h4{
@@ -79,7 +77,7 @@
         font-size: 23px;
       }
       .fa-user-circle{
-        padding-top: 30px;
+        padding-top: 25px;
         font-size: 80px;
       }
       
