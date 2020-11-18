@@ -9,24 +9,27 @@
   }
      /*------------------------------------header section----------------------------------------*/
       header{
-      	height:8vh;
+      	height:8.4vh;
         width: 100%;
       }
       .navbar{
         background: #2ECAB6;
-        padding: 0px 30px;
-        height:8vh;
+        padding: 5px 50px;
+        height:8.5vh;
       }
-    
+    .logo,.menu{
+      height: 8vh;
+    }
       .logo a{
       	text-decoration: none;
-      	font-size: 22px;
+      	font-size: 20px;
       	color: #fff;
       	font-weight: bold;
+
       }
       .logo p{
-        padding-top: 0px;
         font-size: 16px; 
+        margin-top: -10px;
       }
       .menu ul{
       display: flex;
