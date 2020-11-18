@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'ITC Officina Sans Std Book';
   }
+  a{
+    text-decoration: none;
+  }
      /*------------------------------------header section----------------------------------------*/
       header{
       	height:8vh;
@@ -25,11 +28,11 @@
         padding-top: 0px;
         font-size: 16px; 
       }
-       ul{
+      .menu ul{
       display: flex;
       list-style: none;
        } 
-       ul li a{
+       .menu ul li a{
         color: white;
         font-size: 20px;
        }
@@ -50,6 +53,8 @@
        } 
        .mobview{
         display: block;
+        background: #f1f3f6;
+        width: 100%;   
        }
     .myaccount{  
         width: 100%;
@@ -67,11 +72,7 @@
         padding-top: 35px;
         font-size: 70px;
       }
-      .cards{
-          display: block;
-          background: whitesmoke;
-          width: 100%;   
-       }
+      
       .card p{
         float: right;
         margin-bottom: 0px !important;
@@ -122,4 +123,24 @@
 		  transform-origin: 0 0;
 		  transition: 0.5s;
 		}
+    .deskview{
+      display: none;
+      }
+
+    }
+    /*---------------------------desktop view-------------------------*/
+    .deskview{
+      background: #f1f3f6;
+      height: 100vh;
+    }
+    .box{
+      background: #fff;
+      margin: 2px 0px;
+    }
+    ul{
+      list-style: none;
+    }
+    .upper{
+      display: flex;
+      justify-content: space-between;
     }
