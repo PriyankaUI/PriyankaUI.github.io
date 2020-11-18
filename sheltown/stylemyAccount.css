@@ -6,47 +6,79 @@
   }
      /*------------------------------------header section----------------------------------------*/
       header{
-      	height:34vh;
-      	background: #2ECAB6;
+      	height:8vh;
+        width: 100%;
       }
       .navbar{
         background: #2ECAB6;
-        position: fixed;
-        width: 100%;
-        height: 8vh;
+        padding: 0px 30px;
+        height:8vh;
       }
+    
       .logo a{
       	text-decoration: none;
       	font-size: 22px;
       	color: #fff;
       	font-weight: bold;
       }
-      @media (max-width: 600px){
+      .logo p{
+        padding-top: 0px;
+        font-size: 16px; 
+      }
+       ul{
+      display: flex;
+      list-style: none;
+       } 
+       ul li a{
+        color: white;
+        font-size: 20px;
+       }
+
+      .text{
+        display: none;
+       } 
+       .mobview{
+        display: none;
+       }
+ @media (max-width: 600px){
+       .text{
+        display: block;
+        color:white;
+       }
+       .menu{
+        display: none;
+       } 
+       .mobview{
+        display: block;
+       }
     .myaccount{  
         width: 100%;
         color: white;
-        text-align: center;
+        text-align: center; 
+        background: #2ECAB6;
+        height: 28vh;
+
       }
-      .myaccount p{
+      .myaccount h4{
       	padding-top: 7px;
         font-size: 23px;
       }
       .fa-user-circle{
-        padding-top: 65px;
+        padding-top: 35px;
         font-size: 70px;
       }
-      .blocks{
-        display: none;
-      }
-      .mobview{
+      .cards{
           display: block;
           background: whitesmoke;
+          width: 100%;   
        }
       .card p{
         float: right;
+        margin-bottom: 0px !important;
+        font-size: 18px;
       }
       .card{
-        margin: 10px;
+        margin: 10px -5px; ;
       }
       .card-body{
         padding: 10px 10px;
@@ -56,7 +88,7 @@
          margin-right: 10px;
       }
       hr{
-        margin: 5px;
+        margin: 15px 5px;
       }
 /*-------------------------------------logout section----------------------------------------*/
 		.logout_section {
