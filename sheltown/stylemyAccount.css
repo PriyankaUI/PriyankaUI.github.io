@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: 'ITC Officina Sans Std Book';
   }
-  a{
-    text-decoration: none;
-  }
      /*------------------------------------header section----------------------------------------*/
       header{
       	height:8.4vh;
@@ -150,29 +147,44 @@
       font-size: 50px;
       color: #2ECAB6;
     }
-    .box{
+    .boxs{
+      background: #fff;
+      padding-bottom: 15px;
+    }
+    .box {
       background: #fff;
       margin: 1px 0px;
-      padding: 15px;
-      font-size: 20px;
+      padding:15px 20px;
+      
     }
-    .box a{
+    .left a{
       text-decoration: none;
       color: black;
     }
-    .box a span{
-      opacity: 0.7;
+    .left a:hover{
+      color: #2ECAB6;
     }
-    .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home{
+    .box .list{
+      opacity: 0.7;
+      font-size: 20px;
+    }
+    .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home .box,.fa-power-off{
       color: #2ECAB6;
       margin-right: 15px;
     }
-    .box ul li a{
-      font-size: 16px; 
+    .sublist{
+      padding: 5px 0px 5px 50px;
     }
+    .sublist:hover{
+      background: #F2FFFC;
+    }
+
+   /* .box ul li a{
+      font-size: 16px; 
+    }*/
     ul{
       list-style: none;
-      margin-left: 30px
+      
     }
     .upper{
       display: flex;
