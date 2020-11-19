@@ -99,7 +99,7 @@
       }
 /*-------------------------------------logout section----------------------------------------*/
 		.logout_section {
-		  background-color: #2ECAB6;
+		  background-color: #444;
 		  height: 8vh; 
 		}
 		.logout_section button {
@@ -115,10 +115,11 @@
 		}
 		.logout_section button:hover::after {
 		  transform: scaleX(1);
+
 		}
 		.logout_section button::after {
 		  content: "";
-		  background-image: linear-gradient(to left,#db3721,#e81313,#fbfc45);
+		  background:#2ECAB6;
 		  height: 100%;
 		  width: 100%;
 		  position: absolute;
@@ -128,11 +129,11 @@
 		  transform: scaleX(0);
 		  transform-origin: 0 0;
 		  transition: 0.5s;
+
 		}
     .deskview{
       display: none;
       }
-
     }
     /*---------------------------desktop view-------------------------*/
     /*--------------------------------left side--------------------------------------*/
@@ -166,7 +167,7 @@
       opacity: 0.7;
       font-size: 20px;
     }
-    .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home .box,.fa-power-off{
+    .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home .box,.fa-power-off,.fa-star{
       color: #2ECAB6;
       margin-right: 15px;
     }
@@ -184,20 +185,38 @@
     .bookings{
       margin: 10px 0px;
       padding:10px 10px; 
-      box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+      border: 1px solid grey;
     }
-    .image{
-       padding: 10px;
-      }
     .image img{
-      height: 100px;
-      width:100px;
+      height: 120px;
+      width:130px;
+    }
+    .bookings p{
+      margin-bottom: 0;
+      text-align: right;
+      text-transform: uppercase;
+      margin-top: -25px;
     }
     .bookings p a{
-      float: right;
-      font-size: 18px;
+      text-decoration: none;  
+    }
+    .fa-circle{
+      color: limegreen;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+    .link a{
       text-decoration: none;
-      padding: 0 20px 20px 0;
+      color: #444;
+    }
+     .upper ul li{
+      border: 1px soild black;
+      margin: 5px;
+    }
+    .link{
+      text-align: center;
+      background: #2ECAB6;
+      font-size: 18px;
     }
     /*--------------------------------right side end------------------------------------------------*/
     footer{
