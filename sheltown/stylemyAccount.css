@@ -167,8 +167,12 @@
       color: #2ECAB6;
       margin-right: 15px;
     }
+    .box ul li a{
+      font-size: 16px; 
+    }
     ul{
       list-style: none;
+      margin-left: 30px
     }
     .upper{
       display: flex;
