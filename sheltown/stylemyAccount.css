@@ -9,23 +9,22 @@
   }
      /*------------------------------------header section----------------------------------------*/
       header{
-      	height:8vh;
+      	height:8.4vh;
         width: 100%;
       }
       .navbar{
         background: #2ECAB6;
-        padding: 5px 50px;
-        height:8.1vh;
+        padding: 0px 50px;
+        height:8.5vh;
       }
     .logo{
-      padding-top: 5px;
+      padding-top: 0px;
     }
       .logo a{
       	text-decoration: none;
       	font-size: 20px;
       	color: #fff;
       	font-weight: bold;
-
       }
       .logo p{
         font-size: 16px; 
@@ -37,11 +36,10 @@
       display: flex;
       list-style: none;
        } 
-       .menu ul li a{
+       .menu ul li p{
         color: white;
         font-size: 20px;
        }
-
       .text{
         display: none;
        } 
@@ -139,11 +137,37 @@
     /*---------------------------desktop view-------------------------*/
     .deskview{
       background: #f1f3f6;
-      height: 100vh;
+    }
+    .r{
+      padding: 15px 50px; 
+    }
+    .icon{
+      margin-bottom: 15px;
+      background: #fff;
+      padding: 10px;
+    }
+    .icon .fa-user-circle{
+      font-size: 50px;
+      color: #2ECAB6;
     }
     .box{
       background: #fff;
-      margin: 2px 0px;
+      margin: 1px 0px;
+      padding: 15px;
+    }
+    .mybooking{
+      font-size: 20px;
+    }
+    .mybooking a{
+      text-decoration: none;
+      color: black;
+    }
+    .mybooking a span{
+      opacity: 0.7;
+    }
+    .box .fa-home{
+      color: #2ECAB6;
+      margin-right: 15px;
     }
     ul{
       list-style: none;
