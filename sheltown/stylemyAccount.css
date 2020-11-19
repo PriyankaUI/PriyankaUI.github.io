@@ -232,7 +232,11 @@
     }
     .breadcrumb li a{
       text-decoration: none;
-      color: black;
+      color: #0275d8;
+    }
+    .breadcrumb li a:hover{
+      color: #01447e;
+      text-decoration: underline;
     }
     /*--------------------------------right side end------------------------------------------------*/
     footer{
