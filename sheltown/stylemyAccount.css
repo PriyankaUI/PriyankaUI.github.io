@@ -153,8 +153,7 @@
     .box {
       background: #fff;
       margin: 1px 0px;
-      padding:15px 20px;
-      
+      padding:15px 20px;  
     }
     .left a{
       text-decoration: none;
@@ -217,6 +216,23 @@
       text-align: center;
       background: #2ECAB6;
       font-size: 18px;
+    }
+    .breadcrumb{
+      padding: 0px 16px;
+      list-style: none;
+      background: #fff;
+    }
+    .breadcrumb li{
+      display: inline;
+    }
+    .breadcrumb li + li:before{
+      padding: 5px;
+      color: black;
+      content: "\003E"
+    }
+    .breadcrumb li a{
+      text-decoration: none;
+      color: black;
     }
     /*--------------------------------right side end------------------------------------------------*/
     footer{
