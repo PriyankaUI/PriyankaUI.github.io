@@ -82,7 +82,7 @@
       .card p{
         float: right;
         margin-bottom: 0px !important;
-        font-size: 18px;
+        font-size: 16px;
       }
       .card{
         margin: 10px -5px; ;
@@ -154,18 +154,16 @@
       background: #fff;
       margin: 1px 0px;
       padding: 15px;
-    }
-    .mybooking{
       font-size: 20px;
     }
-    .mybooking a{
+    .box a{
       text-decoration: none;
       color: black;
     }
-    .mybooking a span{
+    .box a span{
       opacity: 0.7;
     }
-    .box .fa-home{
+    .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home{
       color: #2ECAB6;
       margin-right: 15px;
     }
