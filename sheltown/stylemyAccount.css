@@ -297,7 +297,16 @@
       }
       .p1{
         color: red;
-        font-size: 20px;
+        font-size: 20spx;
+      }
+      .personalinformation{
+        padding: 20px 30px;
+      }
+      .personalinformation div {
+        margin: 15px 0px;
+      }
+    /*.form-check-inline{
+      margin: 20px !important;
       }
 
     /*--------------------------------right side end------------------------------------------------*/
