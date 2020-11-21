@@ -94,7 +94,7 @@
       .card-body h6{
         padding-bottom: 15px;
       }
-      .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card,.fa-credit-card-alt {
+      .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card,.fa-credit-card-alt,.fa-user {
          color: #2ECAB6; 
          margin-right: 10px;
       }
@@ -219,9 +219,6 @@
       padding:10px 10px; 
       border: 1px solid grey;
       font-size: 18px;   
-    }
-    .bookingdetails{
-        
     }
     .image img{
       height: 250px !important;
