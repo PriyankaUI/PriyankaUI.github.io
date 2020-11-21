@@ -10,77 +10,20 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
      <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet">
      <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+     <link href="css/stylemyAccount.css" rel="stylesheet">
       <script type="text/javascript" src="js/myaccount.js"> </script> 
+
       <style type="text/css">
-        .mobview{
-          display: none;
-        }
-      @media (max-width: 700px){
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'ITC Officina Sans Std Book';
-          }
-          .mobview{
-          display: block;
-        }
-           header{
-        height:8.4vh;
-        width: 100%;
-        }
-      .navbar{
-        background: #2ECAB6;
-        padding: 5px 25px; 
-        height:8.5vh;
-       }
-       .backbtn{
-        margin-top:-15px;
-       }
-      .logo{
-      padding-top: 0px;
-       }
-      .logo a{
-        text-decoration: none;
-        font-size: 20px;
-        color: #fff;
-        font-weight: bold;
-      }
-      .logo p{
-        font-size: 16px; 
-        margin-top: -10px;
-        color: white;
-        font-weight: 200;
-      }
+
+      @media (max-width: 700px){     
       .fa-arrow-left{
         color: white;
         margin-right: 20px;
         font-size: 25px;
         padding-top: 5px;
       }
-       .verification{
-      margin: 10px 0px;
-      padding:20px 30px; 
-      
-    }
-    .verification div{
-      margin: 20px 0px;
-    }
-    .buttons .btn{
-      padding: 5px 20px;
-      color: white;
-    }
-    .bold {
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .p3{
-      color:grey;
-      margin-top: 0px;
-      }
-      .p1{
-        color: red;
-        font-size: 20px;
+      .btn{
+        padding: 5px 20px;
       }
     
     }
@@ -90,15 +33,14 @@
 <body> 
 <header>          
   <nav class="navbar  fixed-top">
-    <div class="backbtn"><a href="index.html"><i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i></a></div>
-    <div class="logo"> <a href="#" class="navbar-brand">SHELTOWN.in<p>Live Like you own it</p></a></div>
+    <div class="logo"><a href="index.html"><i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i></a> <a href="#" class="navbar-brand">SHELTOWN.in<p>Live Like you own it</p></a></div>
    
     </nav>
   
 </header>
 <!----------------------mmobile view---------------------------------------------------->
 
-<div class="mobview">  
+<div class="mobileview" style="background: white;">  
      <div class="container-fluid ">  
         <div class="row">
           <div class="col-sm-12">   
@@ -107,12 +49,12 @@
                        <div><h4 class="p2">Verify your identity</h4></div>
                        <div>
                         <label>Verification Status:</label>
-                         <select name="cars" id="cars">
+                         <select name="" id="">
                             <option value="">Verification pending</option>
                             <option value="">Verification Successful</option>  
                           </select>
                         </div>
-                        <div class="buttons">
+                        <div class="button">
                            <button class=" btn btn-danger">Upload</button>
                            <button class="btn btn-warning">Browse</button>
                            <button class="btn btn-success">Submit</button>
