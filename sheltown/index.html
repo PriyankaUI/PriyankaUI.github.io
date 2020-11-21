@@ -104,15 +104,15 @@
                         </div>
                     </div>
                     </div>
-                    <div class="mybooking box" id="mybookings">
-                     <a href=""><i class="fa-1x fas fa-home " aria-hidden="true"></i><span class="list"> My Bookings<span></a>
+                    <div class="mybooking box" >
+                     <a href="#bookings" data-toggle="pill"><i class="fa-1x fas fa-home " aria-hidden="true"></i><span class="list"> My Bookings<span></a>
                     </div>
                     <div class="accountsetting boxs">
                      <div class="box" id="accountsetting">
                       <i class="fas fa-user"></i> <span class="list">Account Setting</span></div>
                      
-                       <a href="#verification"><div class="sublist" >Profile information</div></a>
-                       <a href=""><div class="sublist" >Verify yourself</div></a>
+                       <a href="#verification" data-toggle="pill"><div class="sublist" >Profile information</div></a>
+                       <a href=""><div class="sublist">Verify yourself</div></a>
                     
                     </div>
                     <div class="myappointment box">
@@ -147,6 +147,8 @@
 
                 <div class="col-lg-9 col-md-9 col-sm-9 pl-0  ml-0">
   <!---------------------------------MyBookings------------------------------------------------- -->
+                 <div class="tab-content show">
+                <div class="tab-pane" id="bookings" >
                   <div class="bookingdetails box">
                     <ul class="breadcrumb">
                       <li><a href="#">Home</a></li>
@@ -154,7 +156,7 @@
                       <li><a href="#">My Bookings</a></li>
                       
                     </ul>
-                  <div class="bookings" id="bookings" >
+                  <div class="bookings" >
                     <div class="upper d-flex justify-content-between">
                       <div class="image">
                       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -209,8 +211,11 @@
                    <!--</div>-->
                   </div>
                 </div>
+              </div>
+
    <!---------------------------------MyBookings end------------------------------------------------- -->
    <!---------------------------------verify yourself start------------------------------------------------->
+              <div class="tab-pane" id="verification">
                    <div class="accsetting box">
                      <ul class="breadcrumb">
                       <li><a href="#">Home</a></li>
@@ -219,7 +224,7 @@
                       <li><a href="#">Account Setting</a></li>
                       <li><a href="#">Verify yourself</a></li>
                     </ul>
-                   <div class="verification" id="verification" >
+                   <div class="verification"  >
                        <div><p class="p1">Get best offers Available</p></div>
                        <div><h4 class="p2">Verify your identity</h4></div>
                        <div>
@@ -238,7 +243,7 @@
                        <div class="faqs">
                        <h5 style="font-weight: bold;margin-bottom: 15px;">FAQs</h5>
                        <p class="bold">What happens when I update my email address (or mobile number)?</p>
-                          <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).<p>
+                          <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
 
                           <p class="bold">When will my  account be updated with the new email address (or mobile number)?</p>
                           <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
@@ -249,9 +254,12 @@
                           
                      </div>
                   </div>
+                </div>
+                
    <!---------------------------------verify yourself end------------------------------------------------- -->
                 </div>
                 </div>
+              </div>
             </div>  
 <!-------------------------------Footer section will here-------------------------------------> 
 <div class="mt-5">
