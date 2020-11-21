@@ -299,8 +299,9 @@
         color: red;
         font-size: 20spx;
       }
-      .personalinformation{
-        padding: 20px 30px;
+      .personalinfo{
+        margin: 10px 0px;
+      padding:20px 30px; 
       }
       .personalinformation div {
         margin: 15px 0px;
