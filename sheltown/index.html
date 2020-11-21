@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title> My Account </title>
+    <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
      <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet">
      <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet">
-      <link href="stylemyAccount.css" rel="stylesheet">    
+      <link href="stylemyAccount.css" rel="stylesheet"> 
+      <script type="text/javascript" src="myaccount.js"> </script> 
+       
 </head>
 <body> 
 <header>          
   <nav class="navbar  fixed-top">
-    <div class="logo"><a href="#" class="navbar-brand">SHELTOWN.in<p>Live Like you own it</p></a></div>
+    <div class="logo"><!-- <i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i> --><a href="#" class="navbar-brand">SHELTOWN.in<p>Live Like you own it</p></a></div>
     <div class="menu" >
       <ul class=" ">
         <li class=" ">
-          <p class="nav-link" >Priyanka</p>
+          <p class="nav-link" >Priyanka </p>
         </li>
         <li class="">
           <p class="nav-link" >7008943631</p>
@@ -87,51 +92,51 @@
        <div class="container-fluid">
             <div class="row py-3 px-5">
  <!---------------------------------left side-------------------------- -->
-                <div class="col-lg-3 col-md-3 col-sm-3 ">
-                  <div class="left">
+                <div class="col-lg-3 col-md-3 col-sm-3  ">
+                  <div class="float-left">
                     <div class="icon">
                       <div class="row">
                         <div class="col-3">
                            <i class="fa-3x fas fa-user-circle " aria-hidden="true"></i>
                         </div>
                         <div class="col-9">
-                            <span style="font-size: 12px;color: grey;">Hello,</span><br><span style="font-size: 18px;font-weight: bold;">Priyanka</span>
+                            <span style="font-size: 14px;color: grey;">Hello,</span><br><span style="font-size: 18px;font-weight: bold;">Priyanka</span>
                         </div>
                     </div>
                     </div>
-                    <div class="mybooking box">
+                    <div class="mybooking box" id="mybookings">
                      <a href=""><i class="fa-1x fas fa-home " aria-hidden="true"></i><span class="list"> My Bookings<span></a>
                     </div>
                     <div class="accountsetting boxs">
-                     <div class="box"> <i class="fas fa-user"></i> <span class="list">Account Setting</span></div>
+                     <div class="box" id="accountsetting">
+                      <i class="fas fa-user"></i> <span class="list">Account Setting</span></div>
                      
-                       <a href=""><div class="sublist" >Profile information</div></a>
+                       <a href="#verification"><div class="sublist" >Profile information</div></a>
                        <a href=""><div class="sublist" >Verify yourself</div></a>
-
                     
                     </div>
                     <div class="myappointment box">
                       <a href=""><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i><span class="list">My Appointments</span></a>
                    </div>
                     <div class="payments boxs">
-                        <div class="box"><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i><span class="list">Payments</span></div>
+                        <div class="box"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span class="list">Payments</span></div>
                         
-                            <a href=""><div class="sublist">All Transaction</div></a>
+                            <a href=""><div class="sublist">All Transactions</div></a>
                             <a href=""><div class="sublist"> Gift Cards</div></a>
-                            <a href=""><div class="sublist">My Cupons</div></a>
+                            <a href=""><div class="sublist">My Coupons</div></a>
                         
                     </div>
                     <div class="assistance box">
-                        <a href=""><i class="fa-1x fas fa-clock " aria-hidden="true"></i><span class="list">24/7 Help</span></a>
+                        <a href=""><i class="fa-1x fas fa-clock " aria-hidden="true"></i><span class="list">24/7 Assistance</span></a>
                     </div>
                     <div class="review box">
-                      <a href=""><span class="list">My Review And Ratings</span></a>
+                      <a href=""><i class="fa-1x fas fa-star" aria-hidden="true"></i><span class="list">My Review And Ratings</span></a>
                     </div>
                     <div class="notification box">
-                      <a href=""><span class="list">All Notifications</span></a>
+                      <a href=""><i class="fa-1x fas fa-bell" aria-hidden="true"></i><span class="list">All Notifications</span></a>
                     </div>
                     <div class="wishlists box">
-                      <a href=""><span class="list">My Wishlists</span></a>
+                      <a href=""><i class="fa-1x fas fa-heart" aria-hidden="true"></i><span class="list">My Wishlist</span></a>
                     </div>
                     <div class="logout box">
                       <a href=""><i class="fas fa-power-off"></i><span class="list">Logout</span></a>
@@ -139,55 +144,115 @@
                  </div>
                 </div>
   <!---------------------------------rigghhttside------------------------------------------------- -->
-                <div class="col-lg-9 col-md-9 col-sm-9 pl-1">
+
+                <div class="col-lg-9 col-md-9 col-sm-9 pl-0  ml-0">
+  <!---------------------------------MyBookings------------------------------------------------- -->
                   <div class="bookingdetails box">
-                    <div class=tabcontent>
+                    <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Account</a></li>
+                      <li><a href="#">My Bookings</a></li>
                       
-                        <ul class="breadcrumb">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">My Account</a></li>
-                          <li><a href=""> My Bookings</a></li>
-                        </ul>
-                      
-                    </div>
-                  <div class="bookings">
+                    </ul>
+                  <div class="bookings" id="bookings" >
                     <div class="upper d-flex justify-content-between">
                       <div class="image">
-                        <img src="town1.png">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active img-fluid">
+                            <img class="" src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181" alt="First slide">
+                          </div>
+                          <div class="carousel-item img-fluid">
+                            <img class="" src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184" alt="Second slide">
+                          </div>
+                          <div class="carousel-item img-fluid">
+                            <img class="" src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166" alt="Third slide">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                       </div>
                       <div class="">
                         <ul>
-                          <li>Prperty Name :</li>
+                          <li>Property Name :</li>
                           <li>Monthly rent :</li>
                           <li>Payment status :</li>
                           <li>Move-In Schedule :</li>
-                          <li class="link"><a href="">Raise an issue</a></li>
+                          <li>Last Payment : 320</li>
+                        <li>Date And Time : 19/11/2020</li>
+                        <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Raise An Issue</button>
+                        <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Pay Rent</button>
+                          
                         </ul>
                       </div>
                      <div>
-                      <ul>
-                        <li>320</li>
-                        <li>Last Payment : </li>
-                        <li>Date And Time : </li>
-                        <li></li>
-                        <li></li>
-                        <li class="link l"><a href="">Pay Rent</a></li>
-                      </ul>
-                     </div>
-                     <div>     
                        <ul>
                         <li><i class="fas fa-circle"></i><b>Booking confirmed</b></li>
-                        <li style="font-size: 13px;"> Ready To Move In</li>
+                        <li style="font-size: 18px;" > Ready To Move In</li>
                       </ul>
                      </div>
-                   </div>     
-                     <p ><a href="" ><i class="fas fa-star"></i>Rate And Review Properties</a></p> 
+                   </div>
+                   <!--<div class="lower">-->
+                     <p ><a href="" ><i class="fas fa-star"></i>Rate And Review Properties</a></p>
+                   <!--</div>-->
                   </div>
                 </div>
+   <!---------------------------------MyBookings end------------------------------------------------- -->
+   <!---------------------------------verify yourself start------------------------------------------------->
+                   <div class="accsetting box">
+                     <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Account</a></li>
+                      
+                      <li><a href="#">Account Setting</a></li>
+                      <li><a href="#">Verify yourself</a></li>
+                    </ul>
+                   <div class="verification" id="verification" >
+                       <div><p class="p1">Get best offers Available</p></div>
+                       <div><h4 class="p2">Verify your identity</h4></div>
+                       <div>
+                        <label>Verification Status:</label>
+                         <select name="cars" id="cars">
+                            <option value="">Verification pending</option>
+                            <option value="">Verification Successful</option>  
+                          </select>
+                        </div>
+                        <div class="buttons">
+                           <button class="btn1">Upload</button>
+                           <button class="btn1">Browse</button>
+                           <button class="">Submit</button>
+                       </div>
+                       <p class="p3">(Valid IDs: Adharcard, PAN, Driving Licence, Passport, or any other ID with name and photo) </p>
+                       <div class="faqs">
+                       <h5 style="font-weight: bold;margin-bottom: 15px;">FAQs</h5>
+                       <p class="bold">What happens when I update my email address (or mobile number)?</p>
+                          <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).<p>
+
+                          <p class="bold">When will my  account be updated with the new email address (or mobile number)?</p>
+                          <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
+
+                          <p class="bold">What happens to my existing  account when I update my email address (or mobile number)?</p>
+                         <p> Updating your email address (or mobile number) doesn't invalidate your account. Your account remains fully functional. You'll continue seeing your Order history, saved information and personal details.</p>
+                       </div>
+                          
+                     </div>
+                  </div>
+   <!---------------------------------verify yourself end------------------------------------------------- -->
                 </div>
-            </div>
-       </div>
-     
+                </div>
+            </div>  
 <!-------------------------------Footer section will here-------------------------------------> 
 <div class="mt-5">
 </div>
@@ -321,7 +386,7 @@
                         </a>
                         <!--Instagram-->
                         <a class="ins-ic" href="https://instagram.com/sheltown.india" target="_blank">
-                            <i class="fab fa-instagram white-text mr-4"> </i>
+                            <i class="fab fa-instagram white-text "> </i>
                         </a>
         
                     </div>
@@ -338,6 +403,13 @@
  </section>    
      <!---------------------------------desktop view end--------------------------------->
      
-   
+   <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

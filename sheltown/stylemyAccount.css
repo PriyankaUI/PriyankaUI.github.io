@@ -9,7 +9,7 @@
   }
      /*------------------------------------header section----------------------------------------*/
       header{
-      	height:8.4vh;
+        height:8.4vh;
         width: 100%;
       }
       .navbar{
@@ -21,10 +21,10 @@
       padding-top: 0px;
     }
       .logo a{
-      	text-decoration: none;
-      	font-size: 20px;
-      	color: #fff;
-      	font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
       }
       .logo p{
         font-size: 16px; 
@@ -46,7 +46,7 @@
        .mobview{
         display: none;
        }
- @media (max-width: 600px){
+ @media (max-width: 700px){
   .navbar{
         padding: 5px 25px; 
       }
@@ -67,11 +67,11 @@
         color: white;
         text-align: center; 
         background: #2ECAB6;
-        height: 26vh;
+        height: 28vh;
 
       }
       .myaccount h4{
-      	padding-top: 7px;
+        padding-top: 7px;
         font-size: 23px;
       }
       .fa-user-circle{
@@ -81,6 +81,7 @@
       
       .card p{
         float: right;
+        margin-top: 2px !important;
         margin-bottom: 0px !important;
         font-size: 16px;
       }
@@ -88,49 +89,53 @@
         margin: 10px -5px; ;
       }
       .card-body{
-        padding: 15px 15px 10px;
+        padding: 15px;
       }
-      .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card{
+      .card-body h6{
+        padding-bottom: 15px;
+      }
+      .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card,.fa-credit-card-alt {
          color: #2ECAB6; 
          margin-right: 10px;
       }
       hr{
-        margin: 15px 5px 5px;
+        margin: 15px 5px;
+        margin-bottom: 0px !important;
       }
 /*-------------------------------------logout section----------------------------------------*/
-		.logout_section {
-		  background-color: #444;
-		  height: 8vh; 
-		}
-		.logout_section button {
-		  background-color: transparent;
-		  border: 1px solid #fff;
-		  color: #fff;
-		  padding: 5px 25px;
-		  position: relative;
-		  top:50%;
-		  left: 50%;
-		  transform: translate(-50%, -50%); 
-		  font-size: 18px;
-		}
-		.logout_section button:hover::after {
-		  transform: scaleX(1);
+    .logout_section {
+      background-color: #444;
+      height: 8vh; 
+    }
+    .logout_section button {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 5px 25px;
+      position: relative;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      font-size: 18px;
+    }
+    .logout_section button:hover::after {
+      transform: scaleX(1);
 
-		}
-		.logout_section button::after {
-		  content: "";
-		  background:#2ECAB6;
-		  height: 100%;
-		  width: 100%;
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  z-index: -1;
-		  transform: scaleX(0);
-		  transform-origin: 0 0;
-		  transition: 0.5s;
+    }
+    .logout_section button::after {
+      content: "";
+      background:#2ECAB6;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transform: scaleX(0);
+      transform-origin: 0 0;
+      transition: 0.5s;
 
-		}
+    }
     .deskview{
       display: none;
       }
@@ -153,48 +158,84 @@
     .box {
       background: #fff;
       margin: 1px 0px;
-      padding:15px 20px;  
+      padding:15px;
+
+      
     }
-    .left a{
+    .float-left a{
       text-decoration: none;
       color: black;
     }
-    .left a:hover{
+    .float-left a:hover{
       color: #2ECAB6;
     }
     .box .list{
       opacity: 0.7;
       font-size: 20px;
     }
-    .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home .box,.fa-power-off,.fa-star{
+    .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home .box,.fa-power-off,.fa-star,.fa-credit-card,.fa-bell,.fa-heart{
       color: #2ECAB6;
       margin-right: 15px;
     }
     .sublist{
       padding: 5px 0px 5px 50px;
+      font-size: 16px;
     }
     .sublist:hover{
       background: #F2FFFC;
+      color: #12c198;
     }
+
+
 /*------------------------------left side end-------------------------------------------------*/
 /*-------------------------------right side---------------------------------------------------*/
     ul{
       list-style: none; 
     }
+    ul.breadcrumb{
+      padding: 10px 16px;
+      list-style: none;
+      background-color: #eee;
+    }
+    ul.breadcrumb li {
+      display: inline;
+      font-size: 18px;
+    }
+    ul.breadcrumb li + li:before{
+      padding: 8px;
+      color: black;
+      content: ">";
+    }
+    ul.breadcrumb li a {
+      color: #23B6AE;
+      text-decoration: none;
+    }
+    ul.breadcrumb li a:hover{
+      color: #01447e;
+      text-decoration: underline;
+    }
     .bookings{
       margin: 10px 0px;
       padding:10px 10px; 
       border: 1px solid grey;
+      font-size: 18px;   
+    }
+    .bookingdetails{
+        display: none;
     }
     .image img{
-      height: 160px;
-      width:150px;
+      height: 250px !important;
+      width:280px !important;
+      /*object-fit: cover;*/
+      padding: 10px;
     }
+    /**/
     .bookings p{
       margin-bottom: 0;
       text-align: right;
       text-transform: uppercase;
       margin-top: 0px;
+
     }
     .bookings p a{
       text-decoration: none;  
@@ -208,39 +249,60 @@
       text-decoration: none;
       color: #444;
     }
-    .l{
-      margin-top: 33px!important;
+    .link a:hover{
+      color: #01447e;
+      text-decoration: underline;
     }
      .upper ul li{
       border: 1px soild black;
       margin: 5px;
     }
     .link{
+      display: inline-block;
       text-align: center;
+      /*background: #2ECAB6;*/
+      font-size: 18px;
+      margin: 15px;
+    }
+    .btn-info{
+      background-color: #2ECAB6 !important;
+
+    }
+    .carousel{
+      width: 290px;
+    }
+    .carousel-control-next {
+    right: 10px;
+    }
+    /*--------------------------------verify yourself section-----------------------------*/
+    .verification{
+      margin: 10px 0px;
+      padding:20px 30px; 
+      
+    }
+    .verification div{
+      margin: 20px 0px;
+    }
+    .buttons button{
+      padding: 5px 40px;
       background: #2ECAB6;
+      color: white;
+      border: 1px solid black;
       font-size: 18px;
     }
-    .breadcrumb{
-      padding: 0px 16px;
-      list-style: none;
-      background: #fff;
+    .bold {
+      font-weight: bold;
+      font-size: 16px;
     }
-    .breadcrumb li{
-      display: inline;
-    }
-    .breadcrumb li + li:before{
-      padding: 5px;
-      color: black;
-      content: "\003E"
-    }
-    .breadcrumb li a{
-      text-decoration: none;
-      color: #0275d8;
-    }
-    .breadcrumb li a:hover{
-      color: #01447e;
-      text-decoration: underline;
-    }
+    .p3{
+      color:grey;
+      margin-top: 0px;
+      }
+      .p1{
+        color: red;
+        font-size: 18px;
+      }
+
     /*--------------------------------right side end------------------------------------------------*/
     footer{
       color: #fff;
