@@ -88,15 +88,22 @@
       .card{
         margin: 10px -5px; ;
       }
+      .card1{
+        margin: 3px -5px;
+      }
       .card-body{
         padding: 15px;
       }
       .card-body h6{
         padding-bottom: 15px;
       }
-      .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card,.fa-credit-card-alt,.fa-user {
+      .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card,.fa-credit-card-alt,
+      .fa-user,.fa-gift,.fa-stumbleupon-circle {
          color: #2ECAB6; 
          margin-right: 10px;
+      }
+      .c{
+        color:black;
       }
       hr{
         margin: 15px 5px;
