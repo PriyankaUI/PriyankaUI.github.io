@@ -100,7 +100,7 @@
             <div class="row py-3 px-5">
  <!---------------------------------left side-------------------------- -->
                 <div class="col-lg-3 col-md-3 col-sm-3  ">
-                  <div class="float-left">
+                  <div class="left">
                     <div class="icon">
                       <div class="row">
                         <div class="col-3">
@@ -111,17 +111,18 @@
                         </div>
                     </div>
                     </div>
-                    <div class="mybooking box" >
-                     <a href="#bookings" data-toggle="pill"><i class="fa-1x fas fa-home " aria-hidden="true"></i><span class="list"> My Bookings<span></a>
-                    </div>
-                    <div class="accountsetting boxs">
-                     <div class="box" id="accountsetting">
-                      <i class="fas fa-user"></i> <span class="list">Account Setting</span></div>
+                    <div class="nav flex-column nav-pills">
+                    <!--<div class="mybooking box" >-->
+                     <a href="#bookings"class="mybooking box"data-toggle="pill" ><i class="fa-1x fas fa-home " aria-hidden="true"></i><span class="list"> My Bookings<span></a>
+                   <!-- </div>-->
+                    <!--<div class="accountsetting boxs">-->
+                     <a class=" nav-link disabled box accountsetting " id="accountsetting" style="margin-bottom:0px;">
+                      <i class="fas fa-user"></i> <span class="list">Account Setting</span></a>
                      
                        <a href="#profileinfo" data-toggle="pill"><div class="sublist" >Profile information</div></a>
-                       <a href="#verification" data-toggle="pill"><div class="sublist">Verify yourself</div></a>
-                    
-                    </div>
+                       <a href="#verification" data-toggle="pill"><div class="sublist">Verify yourself</div></a>         
+                    <!--</div>-->
+                    <div style="background: white; height:  20px;"></div>
                     <div class="myappointment box">
                       <a href=""><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i><span class="list">My Appointments</span></a>
                    </div>
@@ -148,6 +149,7 @@
                     <div class="logout box">
                       <a href=""><i class="fas fa-power-off"></i><span class="list">Logout</span></a>
                     </div>
+                  </div>
                  </div>
                 </div>
   <!---------------------------------rigghhttside------------------------------------------------- -->
@@ -488,7 +490,8 @@
 <!-- Footer -->
  </section>    
      <!---------------------------------desktop view end--------------------------------->
-     
+    
+ 
    <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

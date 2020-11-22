@@ -158,19 +158,23 @@
     .box {
       background: #fff;
       margin: 1px 0px;
-      padding:15px;
-
-      
+      padding:15px;    
     }
-    .float-left a{
+
+    .abox{
+      padding:15px;  
+      background: #fff;
+      margin: 1px 0px 0px 0px;
+    }
+    .left a{
       text-decoration: none;
       color: black;
     }
-    .float-left a:hover{
+    .left a:hover{
       color: #2ECAB6;
     }
     .box .list{
-      opacity: 0.7;
+      opacity: 0.6;
       font-size: 20px;
     }
     .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home .box,.fa-power-off,.fa-star,.fa-credit-card,.fa-bell,.fa-heart{
@@ -180,6 +184,7 @@
     .sublist{
       padding: 5px 0px 5px 50px;
       font-size: 16px;
+      background: white;
     }
     .sublist:hover{
       background: #F2FFFC;
