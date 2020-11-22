@@ -18,7 +18,7 @@
         height:8.5vh;
       }
     .logo{
-      padding-top: 0px;
+      padding-top: -10px;
     }
       .logo a{
         text-decoration: none;
@@ -184,9 +184,7 @@
     .sublist:hover{
       background: #F2FFFC;
       color: #12c198;
-    }
-
-
+   }
 /*------------------------------left side end-------------------------------------------------*/
 /*-------------------------------right side---------------------------------------------------*/
     ul{
@@ -271,7 +269,7 @@
     .carousel-control-next {
     right: 10px;
     }
-    /*--------------------------------verify yourself section-----------------------------*/
+ /*--------------------------Verify yourself section-----------------------------*/
     .verification{
       margin: 10px 0px;
       padding:20px 30px; 

@@ -275,59 +275,61 @@
                         <li><a href="#">Account Setting</a></li>
                         <li><a href="#">Profile information</a></li>
                       </ul>
-                      <div class="personalinformation">
-                      <div class="info"> 
-                        <div style="margin-bottom: 20px;">
-                          <span style="margin-right: 20px;font-size: 20px;font-weight: bold;">Personal Information</span>
-                          <span style=""><a href="#">Edit</a></span>
-                        </div>
-                      <form>
-                        <div style="margin-bottom: 20px;">
-                        <div class="row">
-                          <div class="col-sm-3">
-                            <input type="text" class="form-control" placeholder="First name">
-                          </div>
-                          <div class="col-sm-3">
-                            <input type="text" class="form-control" placeholder="Last name">
-                          </div>
-                        </div>
-                      </div>
-                      <div style="margin-bottom: 20px;">
-                          <h6 style="color:grey;">Your Gender</h6>
-                           <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                            <label class="form-check-label" for="inlineRadio1" style="font-size: 18px">Male</label>
-                           </div>
-                          <div class="form-check form-check-inline">
-                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                            <label class="form-check-label" for="inlineRadio2" style="font-size: 18px">Female</label>
-                          </div>
-                      </div>
-                      <div>
-                      <div class="form-group col-md-5 form-inline">
-                        <label for="inputEmail4" style="font-size: 20px;font-weight: bold;">Email Address</label>
-                        <a href="#" style="margin-left: 20px; font-size: 16px;">Edit</a>
-                        <a href="#" style=" margin-left: 20px;font-size: 16px;">Change Password</a>
-                        <div><input type="email" class="form-control" id="inputEmail4" placeholder="Email"></div>
-                      </div>
-                      <div class="col-md-4 form-inline">
-                        <label for="phone"style="font-size: 20px;font-weight: bold;">Contact number</label>
-                            <a href="#" style=" font-size: 16px;margin-left: 20px">Edit</a><br><br>
-                            <input type="tel" class="form-control">  </div>
-                      </div>           
-                      </form>
-                    </div>
+                      <div class="personalinfo">
+                      <div class="info">
+                      <form class="form-horizontal" id="myform">
+
+                       <fieldset id="persional_information" class="">
+                        <legend class="signup-legend">Personal information
+                          <span style="font-size:16px;margin-left: 20px; "><a href="#">Edit</a></span></legend>
+                          <div class="form-group">       
+                                  <lable class="">
+                                    <input type="text" class="" placeholder="First name">
+                                  </lable>
+                                  <lable class="">
+                                    <input type="text" class="" placeholder="Last name">
+                                  </lable>           
+                           </div> 
+                           <div class="form-group">
+                              <h6 style="color:grey;">Your Gender</h6>
+                               <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                  <label class="form-check-label" for="inlineRadio1" style="font-size: 18px">Male</label>
+                                 </div>
+                                <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                  <label class="form-check-label" for="inlineRadio2" style="font-size: 18px">Female</label>
+                                </div>
+                             </div>
+                             <legend class="signup-legend">Email Address
+                              <span style="font-size:16px;margin-left: 20px; "><a href="#">Edit</a>
+                              </span>
+                              <span style="font-size:16px;margin-left: 20px; "><a href="#">Change Password</a>
+                              </span></legend>                     
+                                <div class="form-group">
+                                 <input type="email" name="email" id="email"placeholder="Email Id" />
+                               </div> 
+                               <legend class="signup-legend">Contact Number
+                              <span style="font-size:16px;margin-left: 20px; "><a href="#">Edit</a>
+                              </span>
+                              </legend>            
+                             <div class="form-group">
+                              <input type="text" name="phno" id="phno" placeholder="Contact No." >
+                              </div>
+                        </fieldset>
+                     </form>
+                   </div>
                     
                     <div class="faqs" style="margin-top: 20px;">
-                    <h5 style="font-weight: bold;margin-bottom: 15px;">FAQs</h5>
-                    <p class="bold">What happens when I update my email address (or mobile number)?</p>
-                    <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
-                      <p class="bold">When will my account be updated with the new email address (or mobile number)?</p>
-                      <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
-                      <p class="bold">What happens to my existing account when I update my email address (or mobile number)?</p>
-                      <p>Updating your email address (or mobile number) dosen't invalidate your account. Your account remains fully functional.<br> You'll continue seeing your Order history, saved information and personal details.
-                      </p>
-                      </div>
+                      <h5 style="font-weight: bold;margin-bottom: 15px;">FAQs</h5>
+                      <p class="bold">What happens when I update my email address (or mobile number)?</p>
+                      <p>Your login email id (or mobile number) changes, likewise. You'll receive all your account related communication on your updated email address (or mobile number).</p>
+                        <p class="bold">When will my account be updated with the new email address (or mobile number)?</p>
+                        <p>It happens as soon as you confirm the verification code sent to your email (or mobile) and save the changes.</p>
+                        <p class="bold">What happens to my existing account when I update my email address (or mobile number)?</p>
+                        <p>Updating your email address (or mobile number) dosen't invalidate your account. Your account remains fully functional.<br> You'll continue seeing your Order history, saved information and personal details.
+                        </p>
+                    </div>
                   </div>
                 </div>
                 </div>

@@ -299,6 +299,23 @@
         color: red;
         font-size: 18px;
       }
+      .personalinfo{
+        margin: 10px 0px;
+         padding:20px 30px;
+      }
+      #myform input[type=text],input[type=email] {
+      padding: 8px 15px ;
+      border: 1px solid #ccc;
+      border-radius: 0px;
+      margin-bottom: 20px;
+      margin-top: 2px;
+     
+      box-sizing: border-box;
+      color: #2C3E50;
+      background-color: #ECEFF1;
+      font-size: 16px;
+      letter-spacing: 1px
+}
 
     /*--------------------------------right side end------------------------------------------------*/
     footer{
