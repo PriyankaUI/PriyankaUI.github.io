@@ -46,7 +46,7 @@
        .mobview{
         display: none;
        }
- @media (max-width: 700px){
+ @media (max-width: 770px){
   .navbar{
         padding: 5px 25px; 
       }
@@ -166,12 +166,6 @@
       background: #fff;
       margin: 1px 0px;
       padding:15px;    
-    }
-
-    .abox{
-      padding:15px;  
-      background: #fff;
-      margin: 1px 0px 0px 0px;
     }
     .left a{
       text-decoration: none;
@@ -336,3 +330,33 @@
       text-decoration: none;
       color: white;
     }
+    /*------------------------media queries for all sizes--------------------------*/
+    @media (max-width: 1430px) {
+  .lower {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1098px) and (min-width: 770px) {
+  .carousel {
+    width: 200px;
+  }
+  .pp1 {
+    font-size: 12px;
+  }
+  .pp2 {
+    font-size: 15px;
+  }
+  .btn {
+    padding: 2px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 955px) and (min-width: 770px) {
+  .list {
+    font-size: 15px;
+  }
+  .sublist {
+    font-size: 12px;
+  }
+}
