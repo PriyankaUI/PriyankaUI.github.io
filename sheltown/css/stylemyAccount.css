@@ -97,6 +97,12 @@
       .card-body h6{
         padding-bottom: 15px;
       }
+      .llist {
+        padding: 0 0 0 40px;
+      }
+      .l {
+        padding: 20px 0 0 40px;
+      }
       .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card,.fa-credit-card-alt,
       .fa-user,.fa-gift,.fa-stumbleupon-circle {
          color: #2ECAB6; 

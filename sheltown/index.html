@@ -55,8 +55,30 @@
             </div>
             <div class="card">
               <div class="card-body">
+                <h6><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i>Account Setting</h6>
+                <div class="llist"><h6>Profile information</h6></div><hr>
+                <p><a href="profileinfo.html">View Profile</a></p>
+                <div class="llist l">Verify yourself</div><hr>  
+                <p><a href="verifyyorself.html">Verifiy</a></p>  
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
                 <h6><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i>My Appointments</h6><hr>
                 <p><a href="">View services you booked</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h6><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i>Payments</h6>
+                <div class="llist">All Transactions</div><hr>
+                <p><a href="">View Transactions</a></p>  
+                <div class="llist l">Gift Cards</div>
+                <hr>
+                <p><a href="">View Gifts</a></p> 
+                <div class="llist l">My Coupons</div>
+                 <hr>
+                <p><a href="">View Coupons</a></p>  
               </div>
             </div>
             <div class="card">
@@ -67,41 +89,19 @@
             </div>
             <div class="card">
               <div class="card-body">
-                <h6><i class="fa-1x fas fa-check " aria-hidden="true"></i>Sheltown Verified</h6><hr>
-                <p><a href="verifyyorself.html">Verify yourself</a></p>
+                <h6><i class="fa-1x fas fa-credit-card " aria-hidden="true"></i>My Review And Ratings</h6>
+                <hr>
+                <p><a href="">View</a></p>
               </div>
-            </div>
-              <div class="card">
+            </div>   
+            <div class="card card1">
               <div class="card-body">
-                <h6><i class="fa-1x fas fa-user " aria-hidden="true"></i>Account Setting</h6><hr>
-                <p><a href="profileinfo.html">Profile information</a></p>
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="card-body">
-                <h6><i class="fa-1x fas fa-credit-card " aria-hidden="true"></i>Transaction Details</h6><hr>
-                <p><a href="">View </a></p>
+                <a class="c" href=""><i class="fa-1x fas fa-bell" aria-hidden="true"></i>All Notifications</a>    
               </div>
             </div>
             <div class="card card1">
               <div class="card-body">
-                <a class="c"><i class="fa-1x fas fa-gift " aria-hidden="true"></i>Gift Cards</a>   
-              </div>
-            </div>
-            <div class="card card1">
-              <div class="card-body ">
-                <a class="c"><i class="fab  fa-1x fa-stumbleupon-circle"></i>My Cupons</a>
-              </div>
-            </div>
-            <div class="card card1">
-              <div class="card-body">
-                <a class="c"><i class="fa-1x fas fa-bell" aria-hidden="true"></i>All Notifications</a>    
-              </div>
-            </div>
-            <div class="card card1">
-              <div class="card-body">
-                <a class="c"><i class="fa-1x fas fa-heart " aria-hidden="true"></i>My WishList</a>    
+                <a class="c" href=""><i class="fa-1x fas fa-heart " aria-hidden="true"></i>My WishList</a>    
               </div>
             </div>
           </div>
@@ -243,8 +243,8 @@
               </div>
 
 
-   <!---------------------------------MyBookings end------------------------------------------------- -->
-   <!---------------------------------verify yourself start------------------------------------------------->
+   <!---------------------------------MyBookings end------------------------------- -->
+   <!---------------------------------verify yourself start----------------------------->
               <div class="tab-pane" id="verification"> 
               <div>  
                      <ul class="breadcrumb">
@@ -321,8 +321,10 @@
                                 </div>
                              </div>
                              <legend class="signup-legend">Email Address
-                              <span style="font-size:16px;margin-left: 20px; "><a href="#">Change Password</a>
-                              </span></legend>                     
+                              <span style="font-size:16px;margin-left: 20px; ">
+                                <a style="color:#23b6ae;" href="#changep" data-toggle="modal" data-target="#exampleModalCenter">Change Password</a>
+                              </span>
+                            </legend>                     
                                 <div class="form-group">
                                  <input type="email" name="email" id="email"placeholder="Email Id" />
                                </div> 
@@ -349,11 +351,40 @@
                 </div>
                 </div>
    <!-----------------------------profile info end-------------------------------------->
+   <!---------------------------change password modal start------------------------------>
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title" id="exampleModalLongTitle">
+                       <h4><strong>Change Password</strong></h4>
+                    </span>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">Resend OTP</span>
+                     </button>
                 </div>
+                <div class="modal-body">
+                    <div class="form-group col-md-6">
+                       <input type="password" class="form-control" id="inputPassword4" placeholder="Type Current Password"><br>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Type New Password"><br>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Retype New Password"><br>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Enter OTP">
+                   </div>
                 </div>
-              </div>
-            </div> 
-            </div> 
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+             </div>
+           </div>
+    </div>
+   <!------------------------change password modal end--------------------------------->
+
+                </div><!--tab-content end-->
+                </div><!--bookingdetails end-->
+              </div><!--col end-->
+            </div> <!-- row end-->
+            </div> <!--container-fluid-end-->
 <!-------------------------------Footer section will here-------------------------------------> 
 <div class="mt-5">
 </div>
