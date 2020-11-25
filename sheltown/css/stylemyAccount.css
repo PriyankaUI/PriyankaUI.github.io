@@ -342,6 +342,13 @@
       letter-spacing: 1px
 }
 /*----------------------all transaction--------------------------*/
+.dp1{
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.dp3{
+  margin-bottom: 0;
+}
 
     /*--------------------------------right side end------------------------------------------------*/
     footer{
