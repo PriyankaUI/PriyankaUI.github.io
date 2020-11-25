@@ -15,7 +15,7 @@
 
       <style type="text/css">
 
-      @media (max-width: 700px){     
+      @media (max-width: 770px){     
       .fa-arrow-left{
         color: white;
         margin-right: 20px;
@@ -25,6 +25,9 @@
       .btn{
         padding: 5px 20px;
         color: white;
+      }
+      .breadcrumb ul li a{
+        font-size: 12px;
       }
     
     }
@@ -36,6 +39,14 @@
   <nav class="navbar  fixed-top">
     <div class="logo"><a href="index.html"><i class="fa-2x fas fa-arrow-left" aria-hidden="true"></i></a>
      <a href="#" class="navbar-brand">SHELTOWN.in<p>Live Like you own it</p></a></div>
+     <div>
+      <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">My Account</a></li>              
+          <li><a href="#">Account Setting</a></li>
+          <li><a href="#">Verify yourself</a></li>
+          </ul>
+       </div>
    
     </nav>
   
@@ -49,7 +60,7 @@
             <div class="verification"  >
                        <div><marquee style="width:100%"><p class="p1">Verify your identity and  Get best offers Available</p></marquee></div>
                        
-                       <div>
+                       <div class="dropdown-container">
                         <label>Verification Status:</label>
                          <select name="" id="">
                             <option value="">Verification pending</option>

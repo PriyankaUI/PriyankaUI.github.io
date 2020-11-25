@@ -93,8 +93,22 @@
                 <hr>
                 <p><a href="">View</a></p>
               </div>
-            </div>   
-            <div class="card card1">
+            </div> 
+            <div class="card">
+              <div class="card-body">
+                <h6><i class="fa-1x fas fa-credit-card " aria-hidden="true"></i>All Notifications</h6>
+                <hr>
+                <p><a href="">View Notifications</a></p>
+              </div>
+            </div> 
+            <div class="card">
+              <div class="card-body">
+                <h6><i class="fa-1x fas fa-credit-card " aria-hidden="true"></i>My Wishlist</h6>
+                <hr>
+                <p><a href="">View your Wishs</a></p>
+              </div>
+            </div> 
+            <!--<div class="card card1">
               <div class="card-body">
                 <a class="c" href=""><i class="fa-1x fas fa-bell" aria-hidden="true"></i>All Notifications</a>    
               </div>
@@ -103,7 +117,7 @@
               <div class="card-body">
                 <a class="c" href=""><i class="fa-1x fas fa-heart " aria-hidden="true"></i>My WishList</a>    
               </div>
-            </div>
+            </div>-->
           </div>
           </div>   
      </div>
@@ -148,7 +162,7 @@
                     <!--<div class="payments boxs">-->
                         <a class="nav-link disabled  payments box"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span class="list">Payments</span></a>
                         
-                            <a href=""><div class="sublist">All Transactions</div></a>
+                            <a href="#alltransaction" data-toggle="pill"><div class="sublist">All Transactions</div></a>
                             <a href=""><div class="sublist"> Gift Cards</div></a>
                             <a href=""><div class="sublist">My Coupons</div></a>
                         
@@ -256,9 +270,9 @@
                     </ul>
                    <div class="verification">
                        <div><marquee style="width:50%"><p class="p1">Verify your identity and  Get best offers Available</p></marquee></div>
-                       <div>
+                       <div class="dropdown-container">
                         <label>Verification Status:</label>
-                         <select name="cars" id="cars">
+                         <select name="" id="">
                             <option value="">Verification pending</option>
                             <option value="">Verification Successful</option>  
                           </select>
@@ -379,6 +393,81 @@
            </div>
     </div>
    <!------------------------change password modal end--------------------------------->
+   <!-------------------------all transaction start-------------------------------->
+   <div class="tab-pane" id="alltransaction"> 
+              <div>  
+                     <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Account</a></li>    
+                      <li><a href="#">Payments</a></li>
+                      <li><a href="#">All Transaction</a></li>
+                    </ul>
+                   <div class="alltransaction">
+                      <div class="d1">
+                        <div class="row">
+                          <div class="col-4">
+                              Transaction
+                          </div>
+                          <div class="col-2">
+                            Amount
+                          </div> 
+                          <div class="col-2">
+                            Status
+                          </div>
+                          <div class="col-4">
+                            Comments
+                          </div> 
+                        </div> 
+                       </div><hr>
+                       <div class="d2">
+                         <div class="row">
+                          <div class="col-4">
+                            <p>Paid for booking at (property name)</p>
+                            <p>4.March.2020, 9:51 pm</p>
+                            <p>Booking Id: property01</p>
+                          </div>
+                          <div class="col-2">
+                            ₹6,000
+                          </div> 
+                          <div class="col-2">
+                             Success
+                          </div>
+                          <div class="col-4">
+                            Bantixn ID 123456
+                          </div> 
+                          </div> 
+                       </div><hr>
+                       <div class="d3">
+                         <div class="row text-center">
+                          <div class="col-4">
+                            <div>
+                              <i class="far fa-heart"></i>
+                               <h4>24x7 help</h4>
+                               <p>Have a query and new help?<a href="">Click here</a></p>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div>
+                               <h4>Sheltic Trust</h4>
+                               <p>Your Money is always in your hands.All returns come with no question asked gurantee.</p>
+                            </div>
+                            
+                          </div> 
+                          <div class="col-4">
+                             <div>
+                               <h4>Ultimate Privacy</h4>
+                               <p>we work for your 100% privacy. If you have an issue, your money is immediately returned. </p>
+                             </div>
+                          </div>
+                          </div> 
+                       </div>
+                          
+                    </div>
+                    
+                  </div>
+                </div>
+   <!-------------------------all transaction end-------------------------------->
+
 
                 </div><!--tab-content end-->
                 </div><!--bookingdetails end-->

@@ -284,10 +284,9 @@
     right: 10px;
     }
     /*--------------------------------verify yourself section-----------------------------*/
-    .verification{
+    .verification,.alltransaction{
       margin: 10px 0px;
-      padding:20px 30px; 
-      
+      padding:20px 30px;   
     }
     .verification div{
       margin: 20px 0px;
@@ -309,6 +308,21 @@
         color: red;
         font-size: 18px;
       }
+      /* apply CSS to the select tag of  
+         .dropdown-container div*/
+
+      .dropdown-container select {
+        /* for Firefox */
+        -moz-appearance: none;
+        /* for Safari, Chrome, Opera */
+        -webkit-appearance: none;
+      }
+
+      /* for IE10 */
+      .dropdown-container select::-ms-expand {
+        display: none;
+      }
+
       /*--------------------------personal information ----------------------------------*/
       .personalinfo{
         margin: 10px 0px;
@@ -327,6 +341,7 @@
       font-size: 16px;
       letter-spacing: 1px
 }
+/*----------------------all transaction--------------------------*/
 
     /*--------------------------------right side end------------------------------------------------*/
     footer{
