@@ -23,6 +23,16 @@
           color: #2ECAB6;
           margin-right: 10px;
         }
+        
+  .image img{
+      height: 250px !important;
+      width: 350px !important;
+      /*object-fit: cover;*/
+      padding: 10px;
+      }
+      .carousel{
+      width: 100%;
+    }
       </style>
 </head>
 <body>
@@ -106,11 +116,11 @@
                 <li>Last Payment : 320</li>
                 <li>Date And Time : 19/11/2020</li>
                 <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Raise An Issue</button>
-                <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Pay Rent</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#payrent">Pay Rent</button>
               </ul>
             </div>                        
              <div style="margin-top: 20px;"> <div style="text-align: center">
-                <h6 style="padding-bottom: 5px;">RATE AND REVIEW</h6>
+                <h6  style="padding-bottom: 5px;">RATE AND REVIEW</h6>
                 <div style="margin-top:0;">
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>

@@ -25,11 +25,9 @@
       .breadcrumb ul li {
         font-size: 12px !important;
       }
-      .cb1,.cb2{
-        display: flex;
-        justify-content: space-between;
-      }
-    
+      .alltransaction{
+        padding: 0px 15px;
+      }    
     }
       </style>
        
@@ -56,19 +54,36 @@
           <div class="card">
               <div class="card-body">
                   <div class="row">
-                    <div class="col-6">
-                      <p>Paid for booking at </p>
-                      <p>(property name)</p>
-                      <p class="">Booking Id: property01</p>
+                    <div class="col-8">
+                      <div style="font-weight: bold;">Paid for booking at</div>
+                      <div style="font-weight: bold;">(property name)</div>
                     </div>
-                    <div class="col-6">6000</div>
+                    <div  class="col-4 text-right">
+                      <div>₹6,000</div>
+                    </div>
                   </div>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-8">
                       <div>4.March.2020, 9:51 pm</div>
-                      <div class="col-6">success</div>
                     </div>
+                    <div  class="col-4 text-right">
+                      <div class="dropdown-container">
+                         <select name="" id="">
+                            <option value="">Success</option>
+                            <option value="">failed</option>
+                            <option value="">pending</option>
+                          </select>
+                    </div>
+                    </div>
+                    <div  class="col-7 ">
+                      <div>Booking Id: property01</div>
+                    </div>
+                    <div  class="col-5 text-right">
+                      <div>Bantixn ID 123456</div>
+                    </div>
+
                   </div>
+
               </div>
           </div>            
      
