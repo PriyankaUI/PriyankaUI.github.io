@@ -235,18 +235,29 @@
                           <li><b>Property Name</b></li>
                           <li>Monthly rent :</li>
                           <li>Move-In Schedule :</li>
-                          <li>Last Payment : <span style="color: green">Done</span></li>
-                        <li>Date And Time : 19/11/2020</li>
+                          <li>Last Payment Done: ₹ 320<span style="color: green">Done</span></li>
+                        <li>Date And Time : 19/11/2020, 9:30pm</li>
                         <button type="button" class="btn btn-info" >Raise An Issue</button>
                         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#payrent">Pay Rent</button>
                           
                         </ul>
                       </div>
                      <div class="pp1">
-                       <ul>
+
+                       <!--<ul>
                         <li><i class="fas fa-circle"></i><b>Booking confirmed</b></li>
                         <li style="font-size: 16px;color: grey; padding-left:20px; " > Ready To Move In</li>
-                      </ul>
+                      </ul>-->
+                      <div class="dropdown-container">
+                         <select name="" id="">
+                            <option value="">
+                                <div><i class="fas fa-circle"></i><b>Booking confirmed</b></div><br>
+                                <div style="font-size: 16px;color: grey; padding-left:20px; "> Ready To Move In</div>   
+                           </option>
+                            <option value="">Booking pending</option>  
+                          </select>
+                        </div>
+
                      </div>
                    </div>
                    <!--<div class="lower">-->
@@ -330,7 +341,9 @@
                       <li><a href="#">Verify yourself</a></li>
                     </ul>
                    <div class="verification">
-                       <div><p class="p1">Verify yourself  and  Get best offers Available</p></div>
+                       <div>
+                        <h3>Verify yourself</h3><div style="margin: 0 80px;">&</div><p class="p1">Get best offers Available</p>
+                      </div>
                        <div><h4>Verify your Identity</h4></div>
                        <div class="dropdown-container">
                         <label>Verification Status:</label>
@@ -376,7 +389,7 @@
 
                        <fieldset id="persional_information" class="">
                         <legend class="signup-legend">Personal information
-                          <span style="font-size:16px;margin-left: 20px; "><a href="#">Edit</a></span></legend>
+                          <span style="font-size:16px;margin-left: 20px; "><a style="color:#23b6ae;"href="#">Edit</a></span></legend>
                           <div class="form-group">       
                                   <lable class="">
                                     <input type="text" class="" placeholder="First name">

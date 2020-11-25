@@ -26,14 +26,18 @@
         
   .image img{
       height: 250px !important;
-      width: 350px !important;
+      min-width: 350px !important;
       /*object-fit: cover;*/
       padding: 10px;
       }
       .carousel{
       width: 100%;
     }
+    .pp2 ul li{
+      margin: 10px;
+      }
       </style>
+    
 </head>
 <body>
   <!----------------------------------------------------------------header Section Start------------------------------------------------------------->
@@ -63,11 +67,20 @@
         <div class="card m-1">
         <div class="card-body">
             <div class="pp1">
-                <ul>
+                <!--<ul>
                     <li><i class="fas fa-circle"></i><b>Booking confirmed</b></li>
                     <li style="padding: 0 0 0 18px;"> Ready To Move In</li>
-                </ul>
-            </div>    
+                </ul>-->
+                <div class="dropdown-container">
+                         <select name="" id="">
+                            <option value="">
+                                <div><i class="fas fa-circle"></i><b>Booking confirmed</b></div><br>
+                                <div style="font-size: 16px;color: grey; padding-left:20px; "> Ready To Move In</div>   
+                           </option>
+                            <option value="">Booking pending</option>  
+                          </select>
+                        </div>
+               </div>    
         <!----------------------------------Image Slider Start----------------------------------->
         <center>
             <div class="image">
@@ -109,25 +122,19 @@
       
            <div class="pp2">
               <ul>
-                <li>Property Name :</li>
+                <li style="font-weight: bold;">Property Name :</li>
                 <li>Monthly rent :</li>
                 <li>Move-In Schedule :</li>
-                <li>Last Payment : 320</li>
-                <li>Date And Time : 19/11/2020</li>
+                <li>Last Payment Done : ₹ 320</li>
+                <li>Date And Time : 19/11/2020, 9:30pm</li>
                 <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Raise An Issue</button>
                 <button type="button" class="btn btn-info" data-toggle="modal" data-target="#payrent">Pay Rent</button>
               </ul>
             </div>                        
-             <div style="margin-top: 20px;"> <div style="text-align: center">
-                <h6  style="padding-bottom: 5px;">RATE AND REVIEW</h6>
-                <div style="margin-top:0;">
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </div>
+             <div style="margin-top: 20px;"> 
+              <a href="#" style="text-align:right">
+                <h6><i class="fas fa-star"></i>RATE AND REVIEW</h6>
+              </a>
             </div>     
             </div>     
         </div>
