@@ -154,7 +154,7 @@
       display: none;
       }
       ul.breadcrumb li {
-        font-size: 12px; 
+        font-size: 14px !important; 
       }
     }
     /*---------------------------desktop view-------------------------*/
