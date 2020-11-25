@@ -157,28 +157,28 @@
                     <!--</div>-->
                     <div style="background: white; height:  20px;"></div>
                     <!--<div class="myappointment box">-->
-                      <a href="" class="myappointment box"><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i><span class="list">My Appointments</span></a>
+                      <a href="#appointment" class="myappointment box" data-toggle="pill"><i class="fa-1x fas fa-calendar-check " aria-hidden="true"></i><span class="list">My Appointments</span></a>
                    <!--</div>-->
                     <!--<div class="payments boxs">-->
                         <a class="nav-link disabled  payments box"><i class="fa-1x fas fa-credit-card" aria-hidden="true"></i><span class="list">Payments</span></a>
                         
                             <a href="#alltransaction" data-toggle="pill"><div class="sublist">All Transactions</div></a>
-                            <a href=""><div class="sublist"> Gift Cards</div></a>
-                            <a href=""><div class="sublist">My Coupons</div></a>
+                            <a href="#giftcards" data-toggle="pill"><div class="sublist"> Gift Cards</div></a>
+                            <a href="#cupons"  data-toggle="pill"><div class="sublist">My Coupons</div></a>
                         
                    <!-- </div>-->
                    <div style="background: white; height:  20px;"></div>
                     <!--<div class="assistance box">-->
-                        <a href=""class="assistance box"><i class="fa-1x fas fa-clock " aria-hidden="true"></i><span class="list">24/7 Assistance</span></a>
+                        <a href="#assistance247"class="assistance box" data-toggle="pill"><i class="fa-1x fas fa-clock " aria-hidden="true"></i><span class="list">24/7 Assistance</span></a>
                     <!--</div>-->
                     <!--<div class="review box">-->
-                      <a class="review box" href=""><i class="fa-1x fas fa-star" aria-hidden="true"></i><span class="list">My Review And Ratings</span></a>
+                      <a class="review box" href="#reviews"data-toggle="pill"><i class="fa-1x fas fa-star" aria-hidden="true"></i><span class="list">My Review And Ratings</span></a>
                     <!--</div>-->
                     <!--<div class="notification box">-->
-                      <a href="" class="notification box"><i class="fa-1x fas fa-bell" aria-hidden="true"></i><span class="list">All Notifications</span></a>
+                      <a href="#notifications" class="notification box" data-toggle="pill"><i class="fa-1x fas fa-bell" aria-hidden="true"></i><span class="list">All Notifications</span></a>
                     <!--</div>-->
                     <!--<div class="wishlists box">-->
-                      <a href=""class="wishlists box"><i class="fa-1x fas fa-heart" aria-hidden="true"></i><span class="list">My Wishlist</span></a>
+                      <a href="#wishlist"class="wishlists box" data-toggle="pill"><i class="fa-1x fas fa-heart" aria-hidden="true"></i><span class="list">My Wishlist</span></a>
                     <!--</div>-->
                     <!--<div class="logout box">-->
                       <a href=""class="logout box"><i class="fas fa-power-off"></i><span class="list">Logout</span></a>
@@ -237,8 +237,8 @@
                           <li>Move-In Schedule :</li>
                           <li>Last Payment : <span style="color: green">Done</span></li>
                         <li>Date And Time : 19/11/2020</li>
-                        <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Raise An Issue</button>
-                        <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Pay Rent</button>
+                        <button type="button" class="btn btn-info" >Raise An Issue</button>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#payrent">Pay Rent</button>
                           
                         </ul>
                       </div>
@@ -255,7 +255,68 @@
                   </div>
                 </div>
               </div>
+<!---------------------------------MyBookings last------------------------------- -->
+<!---------------------------------pay rent modal start------------------------------- -->
+<div class="modal fade" id="payrent" tabindex="-1" role="dialog" >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title" id="exampleModalLongTitle">
+                      <h4  style="color:  #2ecab6;"><strong>Pay Rent</strong></h4>
+                    </span>
+                </div>
+                <div class="modal-body">
+                    <h4><strong>Pay Now</strong></h4>
+                    <div style="display:block;">
+                     <div style="display: inline;">
+                      <label>Paying For :</label>
+                       <select style="background-color: #5de0cf; padding: 5px;" name="cars" id="cars">      
+                           <option>Reservation</option>
+                            <option>Monthly Rent</option>
+                            <option >Security Deposit</option>
+                      </select></div>
+                      <div style="display: inline;">
+                         <input style="padding: 4px;" type="text" id="money" value="₹">
+                      </div>
+                      </div>       
+                       <div class="form-group col-md-6" style="display: block;">
+                          <a style="display: inline;" href="#" style="color: #23b6ae">
+                               <h6 style="display: inline;">Have a Promocode?</h6>
+                          </a>
+                                
+                          <a style="display: inline; margin-left: 20px;" href="#" style="color: #23b6ae">
+                            <h6 style="display: inline;">offers</h6>
+                          </a>                          
+                        </div>
+                       <div style="display: inline;">
+                          <select name="DOBMonth">
+                                <option>Select Month</option>
+                                <option value="January">January</option>
+                                <option value="Febuary">Febuary</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                              </select>
+                              
+                          <label for="start">Year:</label>
+                          <select name="select" id="dropdownYear" onchange="getProjectReportFunc()">
+                           </select>
 
+                          <a style="margin-left: 30px;" type="button" class="btn btn-info" href="#" data-dismiss="modal" aria-label="Close">Pay Rent</a>
+                      </div>
+                </div>
+                            
+              </div>
+            </div>
+         </div>
+<!---------------------------------Pay rent modal end------------------------------- -->
 
    <!---------------------------------MyBookings end------------------------------- -->
    <!---------------------------------verify yourself start----------------------------->
@@ -365,7 +426,7 @@
                   </div>
                 </div>
                 </div>
-   <!-----------------------------profile info end-------------------------------------->
+   <!-----------------------------profile info last-------------------------------------->
    <!---------------------------change password modal start------------------------------>
    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
@@ -394,6 +455,19 @@
            </div>
     </div>
    <!------------------------change password modal end--------------------------------->
+   <!-----------------------------profile info end-------------------------------------->
+   <!------------------------my appointments start--------------------------------->
+     <div class="tab-pane" id="appointment">
+         <div>
+                   <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Account</a></li>    
+                      <li><a href="#">My Appointments</a></li>
+                    </ul>
+          </div>
+          
+     </div>
+   <!-------------------------amy appointments end-------------------------------->
    <!-------------------------all transaction start-------------------------------->
    <div class="tab-pane" id="alltransaction"> 
               <div>  
@@ -478,6 +552,122 @@
                   </div>
                 </div>
    <!-------------------------all transaction end-------------------------------->
+   <!----------------------rigghhttside for Gift Cards section--------------- -->
+                  <div class="tab-pane fade" id="giftcards" role="tabpanel">
+                    <div>
+                      <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                      </ul>
+                    </div>
+                  
+                  <div class="giftCards">
+                  <div class="card w-75" >
+                    <div class="card-body">
+                      <h4>Gift Cards are not available.</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  <!---------------------rigghhttside for Gift Cards section end------------- -->
+   <!-------------------------rigghhttside for My Coupons section------------------ -->
+                  <div class="tab-pane fade" id="cupons" >
+                    <div>
+                      <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">My Coupons</a></li>
+                      </ul>
+                    </div>
+                    <h4 style="text-align: center;">My Coupons</h4>
+                    <div class="card-deck" style="margin: 20px;">
+  <div class="card "> 
+    <div class="card-body">
+      <div class="card-header">
+    <h4>Coupon-1</h4>
+  </div>   
+      <ul class="card-text coupon" style="font-size: 20px; margin: 10px; " >   
+        <li>Coupon Value : ₹ 820</li>
+        <li>Date and Time : 6/12/2020 10:14 AM</li>
+        <li>Code : 0987654321123456</li>
+        <div class="dropdown-container">
+                      <label>Coupon Status : </label>
+                    <select name="cars" id="cars">
+                      <option value="none">Ready To Use</option>
+                      <option value="none">Expired</option>
+                    </select></div>
+        <li style="display: inline-block;">Comment: <textarea class="form-control" rows="1"  style="float: right; margin-left: 10px; margin-top: 10px;"></textarea></li> 
+      </ul>
+     </div>  
+  </div>
+  <div class="card"> 
+    <div class="card-body">
+      <div class="card-header">
+    <h4>Coupon-2</h4>
+  </div>
+      <ul class="card-text coupon" style="margin: 10px; font-size: 20px;" >
+        <li >Coupon Value : ₹ 820</li>
+        <li>Date and Time : 6/12/2020 10:14 AM</li>
+        <li>Code : 0987654321123456</li>
+        <div class="dropdown-container">
+              <label>Coupon Status : </label>
+               <select name="cars" id="cars">
+              <option value="none">Ready To Use</option>
+              <option value="none">Expired</option>
+              </select></div>
+        <li style="display: inline-block;">Comment: <textarea class="form-control" rows="1"  style="float: right; margin-left: 10px; margin-top: 10px;"></textarea></li> 
+      </ul>
+     </div> 
+  </div>
+</div>
+  </div>
+   <!---------------rigghhttside for My Coupons section end--- ------------------------->
+   <!------------------------24/7 assistance  start--------------------------------->
+     <div class="tab-pane" id="assistance247">
+         <div>
+                   <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Account</a></li>    
+                      <li><a href="#">24/7 Assistance</a></li>
+                    </ul>
+          </div>
+     </div>
+   <!--------------------------24/7 assistance end-------------------------------->
+   <!------------------------my rreview and  ratings  start--------------------------------->
+     <div class="tab-pane" id="reviews">
+         <div>
+                   <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Account</a></li>    
+                      <li><a href="#">My Review and Ratings</a></li>
+                    </ul>
+          </div>
+     </div>
+   <!--------------------------my rreview and  ratings end-------------------------------->
+   <!------------------------all notification  start--------------------------------->
+     <div class="tab-pane" id="notifications">
+         <div>
+                   <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Account</a></li>    
+                      <li><a href="#">All Notifications</a></li>
+                    </ul>
+          </div>
+     </div>
+   <!--------------------------all notification end--------------------------------><!------------------------wishlist  start--------------------------------->
+     <div class="tab-pane" id="wishlist">
+         <div>
+                   <ul class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">My Account</a></li>    
+                      <li><a href="#">My Wishllists</a></li>
+                    </ul>
+          </div>
+     </div>
+   <!--------------------------wishlist end-------------------------------->
 
 
                 </div><!--tab-content end-->
