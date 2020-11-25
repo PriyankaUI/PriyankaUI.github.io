@@ -115,9 +115,7 @@
         margin: 15px 5px;
         margin-bottom: 0px !important;
       }
-      ul.breadcrumb li {
-        font-size: 12px; 
-      }
+      
 /*-------------------------------------logout section----------------------------------------*/
     .logout_section {
       background-color: #444;
@@ -154,6 +152,9 @@
     }
     .deskview{
       display: none;
+      }
+      ul.breadcrumb li {
+        font-size: 12px; 
       }
     }
     /*---------------------------desktop view-------------------------*/
