@@ -1,3 +1,5 @@
+function getProjectReportFunc(){
+
 var currentYear = new Date().getFullYear();
 var yearSelect = document.getElementById("dropdownYear");
 for (var i = 0; i < 11; i++) {
@@ -8,4 +10,5 @@ for (var i = 0; i < 11; i++) {
     isSelected,
     isSelected
   );
+}
 }
