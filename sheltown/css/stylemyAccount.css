@@ -248,10 +248,14 @@
       text-align: right;
       text-transform: uppercase;
       margin-top: 0px;
+      font-size: 14px;
 
     }
     .bookings p a{
       text-decoration: none;  
+    }
+    .bookings p a:hover{
+       text-decoration: underline;
     }
     .fa-circle{
       color: limegreen;
@@ -287,11 +291,7 @@
     .carousel-control-next {
     right: 10px;
     }
-    .rating a:hover{
-       text-decoration: underline;
-       transition: 0.3s;
-
-    }
+    
     /*--------------------------------verify yourself section-----------------------------*/
     .verification,.alltransaction{
       margin: 10px 0px;
