@@ -237,7 +237,7 @@
                           <li>Move-In Schedule :</li>
                           <li>Last Payment Done: ₹ 320</li>
                         <li>Date And Time : 19/11/2020, 9:30pm</li>
-                        <button type="button" class="btn btn-info" >Raise An Issue</button>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#issue" >Raise An Issue</button>
                         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#payrent">Pay Rent</button>
                           
                         </ul>
@@ -261,7 +261,7 @@
                      </div>
                    </div>
                    <!--<div class="lower">-->
-                     <p class="rating"><a href="" ><i class="fas fa-star"></i>Rate And Review Properties</a></p>
+                     <p class="rating"><a href="#review" data-toggle="modal"><i class="fas fa-star"></i>Rate And Review Properties</a></p>
                    <!--</div>-->
                   </div>
                 </div>
@@ -330,6 +330,53 @@
             </div>
          </div>
 <!---------------------------------Pay rent modal end------------------------------- -->
+<!---------------------------------raise an issue start------------------------------- -->
+<div class="modal fade" id="issue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Raise An Issue</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <textarea rows="5" cols="50"></textarea>
+                      
+                            </div>
+                            <div class="modal-footer">
+                              
+                              <button type="button" class="btn btn-info">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+<!---------------------------------raise an issue end------------------------------- -->
+<!---------------------------------rate and review start------------------------------- -->
+<div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Rate And Review Properties</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <textarea rows="5" cols="50"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                              
+                              <button type="button" class="btn btn-info">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+<!---------------------------------rate and review end------------------------------- -->
+
+
 
    <!---------------------------------MyBookings end------------------------------- -->
    <!---------------------------------verify yourself start----------------------------->
@@ -426,9 +473,7 @@
                               </div>
                         </fieldset>
                      </form>
-                     <button type="button" class="btn btn-info btn-lg" style="margin: 17px">
-                               Save
-                     </button>
+                     
                    </div>
                     
                     <div class="faqs" style="margin-top: 20px;">

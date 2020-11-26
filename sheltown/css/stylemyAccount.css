@@ -50,6 +50,9 @@
         display: none;
        }
  @media (max-width: 770px){
+  header{
+        height:8.4vh;
+      }
   .navbar{
         padding: 5px 25px; 
         height: 8.5vh;
