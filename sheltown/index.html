@@ -270,18 +270,19 @@
 <!---------------------------------pay rent modal start------------------------------- -->
 <div class="modal fade" id="payrent" tabindex="-1" role="dialog" >
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content ">
                 <div class="modal-header">
-                    <span class="modal-title" id="exampleModalLongTitle">
-                      <h4  style="color:  #2ecab6;"><strong>Pay Rent</strong></h4>
-                    </span>
+                    <h4  class="modal-title"style="color:  #2ecab6;">Pay Rent</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                         </button>      
                 </div>
-                <div class="modal-body">
-                    <h4><strong>Pay Now</strong></h4>
-                    <div style="display:block;">
+                <div class="modal-body ">
+                    <h4 style="margin-bottom: 20px;"><strong>Pay Now</strong></h4>
+                    <div style="display:block; margin: 10px;">
                      <div style="display: inline;">
                       <label>Paying For :</label>
-                       <select style="background-color: #5de0cf; padding: 5px;" name="cars" id="cars">      
+                       <select style=" padding: 5px;" name="cars" id="cars">      
                            <option>Reservation</option>
                             <option>Monthly Rent</option>
                             <option >Security Deposit</option>
@@ -293,8 +294,7 @@
                        <div class="form-group col-md-6" style="display: block;">
                           <a style="display: inline;" href="#" style="color: #23b6ae">
                                <h6 style="display: inline;">Have a Promocode?</h6>
-                          </a>
-                                
+                          </a>      
                           <a style="display: inline; margin-left: 20px;" href="#" style="color: #23b6ae">
                             <h6 style="display: inline;">offers</h6>
                           </a>                          
@@ -320,7 +320,9 @@
                           <select name="select" id="dropdownYear" onchange="getProjectReportFunc()">
                            </select>
 
-                          <a style="margin-left: 30px;" type="button" class="btn btn-info" href="#" data-dismiss="modal" aria-label="Close">Pay Rent</a>
+                          <div class="modal-footer">
+                            <a  type="button" class="btn btn-info" href="#" data-dismiss="modal" aria-label="Close">Pay Rent</a>
+                          </div>
                       </div>
                 </div>
                             
@@ -447,16 +449,6 @@
    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <!--<div class="modal-header">
-                    <span class="modal-title" id="exampleModalLongTitle">
-                       <h4><strong>Change Password</strong></h4>
-                    </span>
-                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                     </button>
-                     <span aria-hidden="true" style="font-size: 20px;color: green;">Resend OTP</span>
-                </div>-->
-
                 <div class="modal-body">
                     <div class="">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -475,7 +467,7 @@
                    <!--<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>-->
                    <span aria-hidden="true" style="font-size: 20px;color: #007bff;">Resend OTP</span>
                    <button type="button" class="btn btn-info">Save changes</button>
-                   
+
                 </div>
              </div>
            </div>
