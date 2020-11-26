@@ -447,25 +447,35 @@
    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <!--<div class="modal-header">
                     <span class="modal-title" id="exampleModalLongTitle">
                        <h4><strong>Change Password</strong></h4>
                     </span>
                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" style="font-size: 20px;color: limegreen;">Resend OTP</span>
+                    <span aria-hidden="true">&times;</span>
                      </button>
-                </div>
+                     <span aria-hidden="true" style="font-size: 20px;color: green;">Resend OTP</span>
+                </div>-->
+
                 <div class="modal-body">
-                    <div class="form-group col-md-6">
+                    <div class="">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                         </button>
+                        <h4 style="text-align: center;color: #2ECAB6;margin-bottom: 50px;"><strong>Change Password</strong></h4>       
+                    </div>
+                    <div class="form-group col-md-12 ">
                        <input type="password" class="form-control" id="inputPassword4" placeholder="Type Current Password"><br>
                         <input type="password" class="form-control" id="inputPassword4" placeholder="Type New Password"><br>
                         <input type="password" class="form-control" id="inputPassword4" placeholder="Retype New Password"><br>
                         <input type="password" class="form-control" id="inputPassword4" placeholder="Enter OTP">
                    </div>
                 </div>
-                <div class="modal-footer">
-                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="modal-footer " style="margin-left: 10px;justify-content: space-between!important;">
+                   <!--<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>-->
+                   <span aria-hidden="true" style="font-size: 20px;color: #007bff;">Resend OTP</span>
                    <button type="button" class="btn btn-info">Save changes</button>
+                   
                 </div>
              </div>
            </div>
