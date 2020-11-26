@@ -17,6 +17,9 @@
         padding: 0px 50px;
         height:8.5vh;
       }
+      .navbar-brand{
+        padding-top: 0px !important
+      }
     .logo{
       padding-top: 0px;
     }
@@ -360,7 +363,7 @@
 }
 /*-------------------------My Coupons-----------------*/
 .coupon li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /*--------------------------------right side end------------------------------------------------*/
@@ -373,12 +376,15 @@
     }
     /*------------------------media queries for all sizes--------------------------*/
     @media (max-width: 1430px) {
+      .bookings p{
+        font-size: 15px;
+      }
   .lower {
     font-size: 15px;
     padding-top: 20px;
   }
 }
-@media (max-width: 1098px) and (min-width: 770px) {
+@media (max-width: 1125px) and (min-width: 770px) {
   .carousel {
     width: 200px;
   }
