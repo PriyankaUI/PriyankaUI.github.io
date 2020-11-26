@@ -9,13 +9,13 @@
   }
      /*------------------------------------header section----------------------------------------*/
       header{
-        height:8.4vh;
+        height:9.1vh;
         width: 100%;
       }
       .navbar{
         background: #2ECAB6;
         padding: 0px 50px;
-        height:8.5vh;
+        height:9.2vh;
       }
       .navbar-brand{
         padding-top: 0px !important
@@ -52,6 +52,7 @@
  @media (max-width: 770px){
   .navbar{
         padding: 5px 25px; 
+        height: 8.5vh;
       }
        .text{
         display: block;
@@ -250,7 +251,7 @@
       margin-bottom: 0;
       text-align: right;
       text-transform: uppercase;
-      margin-top: -25px;
+      margin-top: -10px;
       font-size: 14px;
 
     }
