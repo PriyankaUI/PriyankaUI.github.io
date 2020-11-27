@@ -2,20 +2,16 @@
 <html>
 
 <head>
-    <title>My Booking</title>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-        <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
-        <link rel="stylesheet" type="text/css"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-        <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet">
-        <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="css/stylemyAccount.css" rel="stylesheet">
+ <title>My Booking</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/d2dd69e8cc.js"></script>
+    <link rel="stylesheet" type="text/css"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link href="fontawesome-free-5.13.0-web/fontawesome/css/all.css" rel="stylesheet">
+    <link href="fontawesome-free-5.13.0-web/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">     
+    <link href="css/stylemyAccount.css" rel="stylesheet">
 
         <style type="text/css">
             .fa-arrow-left {
@@ -23,21 +19,17 @@
                 font-size: 25px;
                 margin-right: 20px;
             }
-
             .fa-user-circle {
                 color: #2ECAB6;
                 margin-right: 10px;
             }
-
             .images img {
                 height: 250px !important;
                 padding: 10px;
             }
-
             .carousel {
                 width: 100%;
             }
-
             .pp2 ul li {
                 margin: 10px;
             }
@@ -90,38 +82,7 @@
                     <!----------------------------------Image Slider Start----------------------------------->
                     <!-- <center>-->
                     <div class="images">
-                        <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active img-fluid">
-                            <img class=""
-                                src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
-                                alt="First slide">
-                        </div>
-                        <div class="carousel-item img-fluid">
-                            <img class=""
-                                src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184"
-                                alt="Second slide">
-                        </div>
-                        <div class="carousel-item img-fluid">
-                            <img class=""
-                                src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
-                                alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>-->
+                        
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -195,18 +156,23 @@
                             </div>
                             <div class="modal-body">
                               <div>
-                                <div><h5>Rate this Property</h5></div>
-                                <div>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                </div>
+                                <div><h5>Rate This Property</h5></div>
+                                <div class="rate" >
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="Excelent">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="Very Good">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="Good">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="Bad">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="Very Bad">1 star</label>
                               </div>
+                              </div><br>
                                 <div>
-                                  <div  style="margin-top: 20px;"><h5>Review this Property</h5></div>
-                                  <textarea rows="5" cols="30" placeholder="Descrption ..." ></textarea>
+                                  <div  style="margin-top: 20px;clear: both;"><h5>Review this Property</h5></div>
+                                  <textarea class="form-control" rows="5"  placeholder="Descrption ..." ></textarea>
                                 </div>
                               </div>
                             <div class="modal-footer">
