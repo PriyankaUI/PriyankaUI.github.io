@@ -353,6 +353,9 @@ ul.breadcrumb li a:hover {
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
+.modalf p{
+  font-size: 12px;
+}
 /*--------------------------------verify yourself section-----------------------------*/
 .verification {
   margin: 10px 0px;
