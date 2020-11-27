@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ITC Officina Sans Std Book';
+  }
+  body{
+    background: #f1f3f6;
+  }
+     /*------------------------------------header section----------------------------------------*/
+      header{
+        height:9.1vh;
+        width: 100%;
+      }
+      .navbar{
+        background: #2ECAB6;
+        padding: 0px 50px;
+        height:9.2vh;
+      }
+      .navbar-brand{
+        padding-top: 0px !important
+      }
+    .logo{
+      padding-top: 0px;
+    }
+      .logo a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+      }
+      .logo p{
+        font-size: 16px; 
+        margin-top: -10px;
+        color: white;
+        font-weight: 200;
+      }
+      .menu ul{
+      display: flex;
+      list-style: none;
+       } 
+       .menu ul li p{
+        color: white;
+        font-size: 20px;
+       }
+      .text{
+        display: none;
+       } 
+       .mobview{
+        display: none;
+       }
+ @media (max-width: 770px){
+  header{
+        height:8.4vh;
+      }
+  .navbar{
+        padding: 5px 25px; 
+        height: 8.5vh;
+      }
+       .text{
+        display: block;
+        color:white;
+       }
+       .menu{
+        display: none;
+       } 
+       .mobview{
+        display: block;
+        background: #f1f3f6;
+        width: 100%;   
+       }
+    .myaccount{  
+        width: 100%;
+        color: white;
+        text-align: center; 
+        background: #2ECAB6;
+        height: 28vh;
+
+      }
+      .myaccount h4{
+        padding-top: 7px;
+        font-size: 23px;
+      }
+      .fa-user-circle{
+        padding-top: 25px;
+        font-size: 80px;
+      }
+      
+      .card p{
+        float: right;
+        margin-top: 2px !important;
+        margin-bottom: 0px !important;
+        font-size: 16px;
+      }
+      .card{
+        margin: 10px -5px; ;
+      }
+      .card1{
+        margin: 3px -5px;
+      }
+      .card-body{
+        padding: 15px;
+      }
+      .card-body h6{
+        padding-bottom: 15px;
+      }
+      .llist {
+        padding: 0 0 0 40px;
+      }
+      .l {
+        padding: 20px 0 0 40px;
+      }
+      .fa-home,.fa-calendar-check,.fa-clock,.fa-check,.fa-credit-card,.fa-credit-card-alt,
+      .fa-user,.fa-gift,.fa-stumbleupon-circle {
+         color: #2ECAB6; 
+         margin-right: 10px;
+      }
+      .c{
+        color:black;
+      }
+      hr{
+        margin: 15px 5px;
+        margin-bottom: 0px !important;
+      }
+      
+/*-------------------------------------logout section----------------------------------------*/
+    .logout_section {
+      background-color: #444;
+      height: 8vh; 
+    }
+    .logout_section button {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 5px 25px;
+      position: relative;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      font-size: 18px;
+    }
+    .logout_section button:hover::after {
+      transform: scaleX(1);
+
+    }
+    .logout_section button::after {
+      content: "";
+      background:#2ECAB6;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transform: scaleX(0);
+      transform-origin: 0 0;
+      transition: 0.5s;
+
+    }
+    .deskview{
+      display: none;
+      }
+      ul.breadcrumb li {
+        font-size: 14px !important; 
+      }
+    }
+    /*---------------------------desktop view-------------------------*/
+    /*--------------------------------left side--------------------------------------*/
+    .icon{
+      margin-bottom: 15px;
+      background: #fff;
+      padding: 10px;
+    }
+    .icon .fa-user-circle{
+      font-size: 50px;
+      color: #2ECAB6;
+    }
+    .boxs{
+      background: #fff;
+      padding-bottom: 15px;
+    }
+    .box {
+      background: #fff;
+      margin: 1px 0px;
+      padding:15px;    
+    }
+    .left a{
+      text-decoration: none;
+      color: black;
+    }
+    .left a:hover{
+      color: #12c198;
+    }
+    .box .list{
+      opacity: 0.6;
+      font-size: 20px;
+    }
+    .box .fa-home,.box .fa-user,.box .fa-calendar-check,.box .fa-clock,.box .fa-home .box .fa-star,.fa-power-off,.fa-credit-card,.fa-bell,.fa-heart{
+      color: #2ECAB6;
+      margin-right: 15px;
+    }
+    .fa-star {
+   color: limegreen;
+   margin-right: 15px;
+   }
+    .sublist{
+      padding: 5px 0px 5px 50px;
+      font-size: 16px;
+      background: white;
+    }
+    .sublist:hover{
+      background: #F2FFFC;
+      color: #12c198;
+    }
+
+
+/*------------------------------left side end-------------------------------------------------*/
+/*-------------------------------right side---------------------------------------------------*/
+    ul{
+      list-style: none; 
+    }
+    ul.breadcrumb{
+      padding: 10px 16px;
+      list-style: none;
+      background-color: #eee;
+    }
+    ul.breadcrumb li {
+      display: inline;
+      font-size: 18px;
+    }
+    ul.breadcrumb li + li:before{
+      padding: 8px;
+      color: black;
+      content: ">";
+    }
+    ul.breadcrumb li a {
+      color: #23B6AE;
+      text-decoration: none;
+    }
+    ul.breadcrumb li a:hover{
+      color: #01447e;
+      text-decoration: underline;
+    }
+    .bookings{
+      margin: 10px 0px;
+      padding:10px 10px; 
+      border: 1px solid grey;
+      font-size: 18px;   
+    }
+    .image img{
+      height: 250px !important;
+      width:280px !important;
+      /*object-fit: cover;*/
+      padding: 10px;
+    }
+    /**/
+    .bookings p{
+      margin-bottom: 0;
+      text-align: right;
+      text-transform: uppercase;
+      margin-top: -10px;
+      font-size: 14px;
+
+    }
+    .bookings p a{
+      text-decoration: none;  
+    }
+    .bookings p a:hover{
+       text-decoration: underline;
+    }
+    .fa-circle{
+      color: limegreen;
+      font-size: 12px;
+      margin-right: 5px;
+    }
+    .link a{
+      text-decoration: none;
+      color: #444;
+    }
+    .link a:hover{
+      color: #01447e;
+      text-decoration: underline;
+    }
+     .upper ul li{
+      border: 1px soild black;
+      margin: 5px;
+    }
+    .link{
+      display: inline-block;
+      text-align: center;
+      /*background: #2ECAB6;*/
+      font-size: 18px;
+      margin: 15px;
+    }
+    .btn-info{
+      background-color: #2ECAB6 !important;
+
+    }
+    .carousel{
+      width: 290px;
+    }
+    .carousel-control-next {
+    right: 10px;
+    }
+    
+    /*--------------------------------verify yourself section-----------------------------*/
+    .verification,.alltransaction{
+      margin: 10px 0px;
+      padding:20px 30px;   
+    }
+    .verification div{
+      margin: 20px 0px;
+    }
+    .buttons .btn{
+      padding: 5px 40px;
+      color: white; 
+      font-size: 16px;
+    }
+    .bold {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .p3{
+      color:grey;
+      margin-top: 0px;
+      }
+      .p1{
+        color: red;
+        font-size: 20px;
+      }
+      /* apply CSS to the select tag of  
+         .dropdown-container div*/
+
+      .dropdown-container select {
+        /* for Firefox */
+        -moz-appearance: none;
+        /* for Safari, Chrome, Opera */
+        -webkit-appearance: none;
+      }
+
+      /* for IE10 */
+      .dropdown-container select::-ms-expand {
+        display: none;
+      }
+
+      /*--------------------------personal information ----------------------------------*/
+      .personalinfo{
+        margin: 10px 0px;
+         padding:20px 30px;
+      }
+      #myform input[type=text],input[type=email] {
+      padding: 8px 15px ;
+      border: 1px solid #ccc;
+      border-radius: 0px;
+      margin-bottom: 20px;
+      margin-top: 2px;
+     
+      box-sizing: border-box;
+      color: #2C3E50;
+      background-color: #ECEFF1;
+      font-size: 16px;
+      letter-spacing: 1px
+}
+/*----------------------all transaction--------------------------*/
+.dp1{
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.dp3{
+  margin-bottom: 0;
+}
+/*-------------------------My Coupons-----------------*/
+.coupon li {
+  margin-bottom: 10px;
+}
+
+/*--------------------------------right side end------------------------------------------------*/
+    footer{
+      color: #fff;
+    }
+    footer a{
+      text-decoration: none;
+      color: white;
+    }
+    /*------------------------media queries for all sizes--------------------------*/
+    @media (max-width: 1430px) {
+      .bookings p{
+        font-size: 15px;
+      }
+  .lower {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1098px) and (min-width: 770px) {
+  .carousel {
+    width: 200px;
+  }
+  .pp1 {
+    font-size: 12px;
+  }
+  .pp2 {
+    font-size: 15px;
+  }
+  .btn {
+    padding: 2px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 955px) and (min-width: 770px) {
+  .list {
+    font-size: 15px;
+  }
+  .sublist {
+    font-size: 12px;
+  }
+}
