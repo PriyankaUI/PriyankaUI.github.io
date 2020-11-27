@@ -18,7 +18,7 @@
     <div class="menu" >
       <ul class=" ">
         <li class=" ">
-          <p class="nav-link" >Priyanka P </p>
+          <p class="nav-link" >Priyanka  </p>
         </li>
         <li class="">
           <p class="nav-link" >7008943631</p>
@@ -95,7 +95,7 @@
               <div class="card-body">
                 <h6><i class="fa-1x fas fa-credit-card " aria-hidden="true"></i>My Review And Ratings</h6>
                 <hr>
-                <p><a href="">View</a></p>
+                <p><a href="myreview.html">View</a></p>
               </div>
             </div>
             <div class="card">
@@ -157,7 +157,7 @@
                             aria-controls="v-pills-verify" aria-selected="false">
                           <div class="sublist">Verify yourself</div>
                         </a>
-                        <!--</div>-->
+                        
                         <div style="background: white; height:  20px;"></div>
                     
                           
@@ -181,12 +181,8 @@
                           <div class="sublist">My Coupons</div>
                         </a>
                         
-                        <!-- </div>-->
                         <div style="background: white; height:  20px;"></div>
-                      
-            
-                             
-                           
+                                    
                         <a class="nav-link assistance box" id="v-pills-assistance-tab" data-toggle="pill" href="#v-pills-assistance" role="tab"
                           aria-controls="v-pills-assistance" aria-selected="false"><i class="fa-1x fas fa-clock " aria-hidden="true"></i><span class="list">24/7 Assistance</span></a>
                         
@@ -197,40 +193,30 @@
                            
                             <a class="nav-link notification box" id="v-pills-notifications-tab" data-toggle="pill" href="#v-pills-notifications" role="tab"
                               aria-controls="v-pills-notifications" aria-selected="false"><i class="fa-1x fas fa-bell" aria-hidden="true"></i><span class="list">All Notifications</span></a>
-                           
-                             
+
                               <a class="nav-link wishlists box" id="v-pills-wishlist-tab" data-toggle="pill" href="#v-pills-wishlist" role="tab"
                                 aria-controls="v-pills-wishlist" aria-selected="false"><i class="fa-1x fas fa-heart" aria-hidden="true"></i><span class="list">My Wishlist</span></a>
-                             
-                                
+                                  
                                 <a class="nav-link logout box" href=""
                                   ><i class="fas fa-power-off"></i><span class="list">Logout</span></a>
                                 
                     </div>
-                    
-                
                  </div>
                 </div>
-                <!--------------------------------- rigghhttside for my booking section------------------------------------------------- -->
-
-                
+   <!---------------------------------- rigghhttside --------------------------------------------- -->        
                     <div class="col-lg-9 col-md-9 col-sm-12 pl-1">
                       <div class="bookingdetails box">
                         <div class="tab-content" id="v-pills-tabContent">
+ <!-------------------- rigghhttside for my bookings------------------------------------ -->
                   <div class="tab-pane fade show active" id="v-pills-bookings" role="tabpanel" aria-labelledby="v-pills-bookings-tab">
                         <ul class="breadcrumb">
                           <li><a href="#">Home</a></li>
                           <li><a href="#">My Account</a></li>
                           <li><a href="#">My Bookings</a></li>
                         </ul>
-                        <!-- <div>
-                                          my account> my bookings
-                                        </div> -->
+                        
                         <div class="bookings">
                           <div class="upper d-flex justify-content-between">
-                            <!-- <div class="image">
-                                            <img src="town1.png">
-                                          </div> -->
                             <div class="image">
                               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -297,10 +283,11 @@
                           <div class="lower">
                           <p><a href="#review" data-toggle="modal" data-target="#review"><i class="fas fa-star"></i>Rate And Review Properties</a></p>
                          
-                        </div></div>
+                        </div>
+                      </div>
                       </div>
 
-                      <!---------------------------------pay rent modal start------------------------------- -->
+     <!---------------------------------pay rent modal start------------------------------- -->
                       <div class="modal fade" id="payrent" tabindex="-1" role="dialog">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content p-1">
@@ -362,9 +349,9 @@
                           </div>
                         </div>
                       </div>
-                      <!---------------------------------Pay rent modal end------------------------------- -->
+ <!--------------------------------Pay rent modal end------------------------------- -->
 
-
+<!------------------------------raise an issue modal start-------------------------->
                       <div class="modal fade" id="issue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -387,20 +374,35 @@
                         </div>
                       </div>
 
+<!------------------------------raise an issue modal end-------------------------->
+<!------------------------------rate and review modal start-------------------------->
 
                       <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Rate And Review Properties</h5>
+                              <h5 class="modal-title" id="exampleModalLongTitle" style="color: #2ECAB6;">Rate And Review Properties</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
                             <div class="modal-body">
-                              <textarea rows="5" cols="50"></textarea>
-                            </div>
+                              <div>
+                                <div><h5>Rate this Property</h5></div>
+                                <div>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                              </div>
+                                <div>
+                                  <div  style="margin-top: 20px;"><h5>Review this Property</h5></div>
+                                  <textarea rows="5" cols="50" placeholder="Descrption ..." ></textarea>
+                                </div>
+                              </div>
                             <div class="modal-footer">
                               
                               <button type="button" class="btn btn-info">Save</button>
@@ -409,8 +411,9 @@
                         </div>
                       </div>
                     
-                  
-                  <!---------------------------------rigghhttside for Profile information section------------------------------------------------- -->
+ <!------------------------------rate and review modal end-------------------------->
+        
+  <!------------------rigghhttside for Profile information section-------------------- -->
                   <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                     <div>
                       <ul class="breadcrumb">
@@ -480,7 +483,7 @@
                   </div>
                   </div>
 
-
+<!------------------------edit personal info modal start------------------------------------->
                   <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -511,8 +514,8 @@
                     </div>
                   </div>
 
-
-                  <!---------------------------change password modal start------------------------------>
+<!------------------------edit personal info modal start------------------------------------->
+  <!---------------------------change password modal start------------------------------>
                   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -532,7 +535,6 @@
                           </div>
                         </div>
                         <div class="modal-footer " style="margin-left: 10px;justify-content: space-between!important;">
-                          <!--<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>-->
                           <span aria-hidden="true" style="font-size: 20px;color: #007bff;">Resend OTP</span>
                           <button type="button" class="btn btn-info">Save changes</button>
                   
@@ -540,11 +542,10 @@
                       </div>
                     </div>
                   </div>
-                  <!------------------------change password modal end--------------------------------->
-                  <!---------------------------------rigghhttside for Profile information section end------------------------------------------------- -->
+  <!------------------------change password modal end--------------------------------->
+ <!-------------------rigghhttside for Profile information section end---------------------------- -->
 
-
-                  <!---------------------------------rigghhttside for Verify yourself section------------------------------------------------- -->
+   <!-------------rigghhttside for Verify yourself section----------------------- -->
                   <div class="tab-pane fade" id="v-pills-verify" role="tabpanel" aria-labelledby="v-pills-verify-tab">
                     <div>
                       <ul class="breadcrumb">
@@ -591,10 +592,10 @@
                   </div>
                 
                 </div></div>
-                  <!---------------------------------rigghhttside for Verify yourself section end------------------------------------------------- -->
+   <!-------------------rigghhttside for Verify yourself section end--------------- -->
 
 
-                  <!---------------------------------rigghhttside for My Appointments section------------------------------------------------- -->
+   <!----------------rigghhttside for My Appointments section----------------- -->
                   <div class="tab-pane fade" id="v-pills-appointments" role="tabpanel" aria-labelledby="v-pills-appointments-tab">My Appointments
                     <div>
                       <ul class="breadcrumb">
@@ -604,11 +605,9 @@
                       </ul>
                     </div>
                   </div>
-                  <!---------------------------------rigghhttside for My Appointments section end------------------------------------------------- -->
+  <!------------rigghhttside for My Appointments section end-------------- -->
 
-
-
-                  <!---------------------------------rigghhttside for All Transactions section------------------------------------------------- -->
+ <!----------------rigghhttside for All Transactions section--------------------- -->
                   <div class="tab-pane fade" id="v-pills-transactions" role="tabpanel" aria-labelledby="v-pills-transactions-tab">
                     <div>
                       <ul class="breadcrumb">
@@ -625,7 +624,7 @@
                       <div class="d1">
                         <div class="row">
                           <div class="col-5">
-                              <div class="dropdown-container">
+                              <div class="dropdownbox">
                                 <label></label>
                                  <select name="" id="">
                                     <option value="">All Transaction</option>
@@ -683,22 +682,22 @@
                             <div>
                               <i class="far fa-heart"></i>
                                <h4>24x7 help</h4>
-                               <p>Have a query and new help ? <a href="">Click here</a></p>
+                               <p>Have a query and need help ?</</p><p style="margin-top: 0px!important;"><a href="">Click here</a></p>
                             </div>
                           </div>
                           <div class="col-4">
                             <div>
-                              <i class="far fa-heart"></i>
-                               <h4>Sheltic's Trust</h4>
+                              <i class="far fa-handshake"></i>
+                               <h4>Sheltie's Trust</h4>
                                <p>Your Money is always in your hands.All returns come with no question asked gurantee.</p>
                             </div>
                             
                           </div> 
                           <div class="col-4">
                              <div>
-                              <i class="far fa-heart"></i>
+                              <i class="fas fa-user-shield"></i>
                                <h4>Ultimate Privacy</h4>
-                               <p>we work for your 100% privacy. If you have an issue, your money is immediately returned. </p>
+                               <p>We work for your 100% privacy. If you have an issue, your money is immediately returned. </p>
                              </div>
                           </div>
                           </div> 
@@ -706,11 +705,9 @@
                      </div>
                    </div>
                   
-                  <!---------------------------------rigghhttside for All Transactions section end------------------------------------------------- -->
+   <!--------------------rigghhttside for All Transactions section end----------------------- -->
 
-
-
-                  <!---------------------------------rigghhttside for Gift Cards section------------------------------------------------- -->
+<!--------------------------rigghhttside for Gift Cards section---------------------------- -->
                   <div class="tab-pane fade" id="v-pills-gift" role="tabpanel" aria-labelledby="v-pills-gift-tab">
                     <div>
                       <ul class="breadcrumb">
@@ -729,11 +726,10 @@
                       </div>
                     </div>
                   </div>
-                  <!---------------------------------rigghhttside for Gift Cards section end------------------------------------------------- -->
+<!---------------------rigghhttside for Gift Cards section end--------------------- -->
 
 
-
-                  <!---------------------------------rigghhttside for My Coupons section------------------------------------------------- -->
+ <!-------------------rigghhttside for My Coupons section------------------------------- -->
                   <div class="tab-pane fade" id="v-pills-coupons" role="tabpanel" aria-labelledby="v-pills-coupons-tab">
                     <div>
                       <ul class="breadcrumb">
@@ -772,15 +768,12 @@
                           </ul>
                         </div>
                     
-                      </div>
-                    
+                      </div>     
                       <div class="card border-info">
-                    
                         <div class="card-body">
                           <div class="card-header border-info">
                             <h4>Coupon-2</h4>
                           </div>
-                    
                           <ul class="card-text coupon" style="margin: 10px; font-size: 20px;">
                             <li>Coupon Value : ₹ 820</li>
                             <li>Date and Time : 6/12/2020 10:14 AM</li>
@@ -789,7 +782,6 @@
                               <label>Coupon Status : </label>
 
                               <select id="mySelect" class="greenText" onchange="this.className=this.options[this.selectedIndex].className">
-                              
                                 <option class="greenText" value="" selected>Ready To Use</option>
                                 <option class="redText" value="">Expired</option>
                               </select>
@@ -799,18 +791,13 @@
                                 style="float: right; margin-left: 10px; margin-top: 10px;"></textarea></li>
                     
                           </ul>
-                        </div>
-                    
-                      </div>
-                    
-                    
+                        </div> 
+                      </div>   
                     </div>
                   </div>
-                  <!---------------------------------rigghhttside for My Coupons section end------------------------------------------------- -->
+ <!--------------------rigghhttside for My Coupons section end---------------- -->
 
-
-
-                  <!---------------------------------rigghhttside for 24/7 Assistance section------------------------------------------------- -->
+   <!-----------------------rigghhttside for 24/7 Assistance section--------------------- -->
                   <div class="tab-pane fade" id="v-pills-assistance" role="tabpanel" aria-labelledby="v-pills-assistance-tab">24/7 Assistance
                     <div>
                       <ul class="breadcrumb">
@@ -820,25 +807,83 @@
                       </ul>
                     </div>
                   </div>
-                  <!---------------------------------rigghhttside for 24/7 Assistance section end------------------------------------------------- -->
+ <!-----------------rigghhttside for 24/7 Assistance section end------------------- -->
 
-
-
-                  <!---------------------------------rigghhttside for My Review And Ratings section------------------------------------------------- -->
+ <!-----------------rigghhttside for My Review And Ratings section------------------- -->
                   <div class="tab-pane fade" id="v-pills-review" role="tabpanel" aria-labelledby="v-pills-review-tab">My Review And Ratings
                     <div>
                       <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">My Account</a></li>
                         <li><a href="#">My Review And Ratings</a></li>
-                      </ul>
-                    </div>
+                      </ul>   
+                    
+                    <div class="ratings">
+                          <div class="row">
+                            <div class=col-4>
+                              <div class="images">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100"
+                                        src="https://tse4.mm.bing.net/th?id=OIP.Pudub9HtjDFOIPg3aBJm_QHaE8&pid=Api&P=0&w=271&h=181"
+                                        alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="https://tse1.mm.bing.net/th?id=OIP.bdAMSmpabS6xShIY93C-CAHaFj&pid=Api&P=0&w=244&h=184"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="https://tse3.mm.bing.net/th?id=OIP.e9ofGpGexjvtT8mfA3rTEwHaE7&pid=Api&P=0&w=248&h=166"
+                                        alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                       </div>          
+                       </div>  
+                      <div class="col-8" >
+                              <div><h5>Name</h5></div>
+                              <div>
+                                <div><h5>Review </h5></div>
+                                  <textarea class="form-control"rows="5"  ></textarea>
+                              </div>
+                              <div>
+                                <div style="margin-top: 10px;"><h5>Rating</h5></div>
+                                <div>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                </div>
+                              </div>   
+                            </div>
+                            
+                          </div>
+                      </div>
+
+                      </div>
                   </div>
-                  <!---------------------------------rigghhttside for My Review And Ratings section end------------------------------------------------- -->
+<!----------------rigghhttside for My Review And Ratings section end----------------- -->
 
-
-
-                  <!---------------------------------rigghhttside for All Notifications section------------------------------------------------- -->
+<!------------rigghhttside for All Notifications section----------------------- -->
                   <div class="tab-pane fade" id="v-pills-review" role="tabpanel" aria-labelledby="v-pills-review-tab">All Notifications
                     <div>
                       <ul class="breadcrumb">
@@ -848,11 +893,9 @@
                       </ul>
                     </div>
                   </div>
-                  <!---------------------------------rigghhttside for All Notifications section end------------------------------------------------- -->
+ <!----------------rigghhttside for All Notifications section end---------------------- -->
 
-
-
-                  <!---------------------------------rigghhttside for My Wishlist section------------------------------------------------- -->
+ <!-------------------rigghhttside for My Wishlist section------------------------- -->
                   <div class="tab-pane fade" id="v-pills-wishlist" role="tabpanel" aria-labelledby="v-pills-wishlist-tab">My Wishlist
                     <div>
                       <ul class="breadcrumb">
@@ -862,16 +905,13 @@
                       </ul>
                     </div>
                   </div>
-                  <!---------------------------------rigghhttside for My Wishlist section end------------------------------------------------- -->
+<!--------------rigghhttside for My Wishlist section end------------------------ -->
 
                 </div>
-
-  
             </div>
        </div>
      </div>
    </div>
-
      
 <!-------------------------------Footer section will here------------------------------------->
 <div class="mt-5">

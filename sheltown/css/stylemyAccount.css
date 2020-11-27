@@ -207,7 +207,7 @@ header {
 .fa-power-off,
 .fa-credit-card,
 .fa-bell,
-.fa-heart {
+.fa-heart,.fa-handshake,.fa-user-shield {
   color: #2ecab6;
   margin-right: 15px;
 }
@@ -252,7 +252,7 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
-.bookings {
+.bookings,.ratings {
   margin: 10px 0px;
   padding: 10px 10px;
   border: 1px solid grey;
@@ -301,7 +301,7 @@ ul.breadcrumb li a:hover {
 .btn-info {
   background-color: #2ecab6 !important;
 }
-.carousel {
+.bookings .carousel {
   width: 290px;
 }
 .carousel-control-next {
@@ -410,6 +410,13 @@ input[type="email"] {
 .yellowText {
   background-color: yellow;
 }
+/*---------------my review and ratings------------------------------------*/
+
+.images img {
+  height: 250px !important;
+  padding: 10px;
+ }
+
 /*--------------------------------right side end------------------------------------------------*/
 footer {
   color: #fff;
