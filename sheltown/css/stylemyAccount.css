@@ -9,7 +9,7 @@ body {
 }
 /*------------------------------------header section----------------------------------------*/
 header {
-  height: 8.4vh;
+  height: 9vh;
   width: 100%;
 }
 .navbar {
@@ -47,6 +47,9 @@ header {
   display: none;
 }
 @media (max-width: 770px) {
+  header {
+  width: 100%;
+}
   .navbar {
     padding: 0px 25px;
   }
@@ -186,11 +189,11 @@ header {
   background: #fff;
   margin: 1px 0px 0px 0px;
 }
-.float-left a {
+.left a {
   text-decoration: none;
   color: black;
 }
-.float-left a:hover {
+.left a:hover {
   color: #069784;
 }
 .box .list {
@@ -353,7 +356,7 @@ ul.breadcrumb li a:hover {
 /*--------------------------------verify yourself section-----------------------------*/
 .verification {
   margin: 10px 0px;
-  padding: 20px 0px;
+  padding: 20px 10px;
 }
 .verification div {
   margin: 20px 0px;
