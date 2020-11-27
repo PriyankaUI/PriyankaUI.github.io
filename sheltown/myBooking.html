@@ -184,73 +184,63 @@
         <div class="modal fade" id="payrent" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="modal-title" id="exampleModalLongTitle">
-                            <h4 style="color:  #2ecab6;"><strong>Pay Rent</strong></h4>
-                        </span>
-        
-                    </div>
-                    <div class="modal-body">
-                        <h4><strong>Pay Now</strong></h4>
-                        <div style="display:block;">
-                            <div style="display: inline;">
-                                <label>Paying For :</label>
-                                <select name="cars" id="cars">
-        
-        
+                <div class="modal-content p-1">
+                            <div class="modal-header">
+                              <h4 class="modal-title" style="color:  #2ecab6;">Pay Rent</h4>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body ">
+                              <h4 style="margin-bottom: 20px;"><strong>Pay Now</strong></h4>
+                              <div style="display:block; margin: 10px;">
+                                <div style="display: inline;">
+                                  <label>Paying For :</label>
+                                  <select style=" padding: 5px;" name="cars" id="cars">
                                     <option>Reservation</option>
                                     <option>Monthly Rent</option>
                                     <option>Security Deposit</option>
-                                </select></div>
-                            <div style="display: inline;">
-                                <input type="text" id="money" value="₹">
-                            </div>
-                        </div>
-        
-        
-                        <div class="form-group col-md-6" style="display: block;">
-        
-                            <a style="display: block;" href="#" style="color: #23b6ae">
-                                <h6 style="display: inline;">Have a Promocode?</h6>
-                            </a>
-        
-                            <a style="display: inline; " href="#" style="color: #23b6ae">
-                                <h6 style="display: inline;">offers</h6>
-                            </a>
-        
-        
-                        </div>
-                        <div style="display: inline;">
-                            <select name="DOBMonth">
-                                <option>Select Month</option>
-                                <option value="January">January</option>
-                                <option value="Febuary">Febuary</option>
-                                <option value="March">March</option>
-                                <option value="April">April</option>
-                                <option value="May">May</option>
-                                <option value="June">June</option>
-                                <option value="July">July</option>
-                                <option value="August">August</option>
-                                <option value="September">September</option>
-                                <option value="October">October</option>
-                                <option value="November">November</option>
-                                <option value="December">December</option>
-                            </select>
-                            <label for="start">Year:</label>
-                            <select name="select" id="dropdownYear" onchange="getProjectReportFunc()">
-                            </select>
-        
-                            <a style="margin-left: 235px;" type="button" class="btn btn-info" href="#" data-dismiss="modal"
-                                aria-label="Close">Pay
-                                Rent</a>
-        
-                        </div>
+                                  </select></div>
+                                <div style="display: inline;">
+                                  <input style="padding: 4px;" type="text" id="money" value="₹">
+                                </div>
+                              </div>
+                              <div class="form-group col-md-6" style="display: block;">
+                                <a style="display: inline;" href="#" style="color: #23b6ae">
+                                  <h6 style="display: block;">Have a Promocode?</h6>
+                                </a>
+                                <a style="display: inline;" href="#" style="color: #23b6ae">
+                                  <h6 style="display: inline;">offers</h6>
+                                </a>
+                              </div>
+                              <div style="display: inline;">
+                                <select name="DOBMonth">
+                                  <option>Select Month</option>
+                                  <option value="January">January</option>
+                                  <option value="Febuary">Febuary</option>
+                                  <option value="March">March</option>
+                                  <option value="April">April</option>
+                                  <option value="May">May</option>
+                                  <option value="June">June</option>
+                                  <option value="July">July</option>
+                                  <option value="August">August</option>
+                                  <option value="September">September</option>
+                                  <option value="October">October</option>
+                                  <option value="November">November</option>
+                                  <option value="December">December</option>
+                                </select>
+                      
+                                <label for="start">Year:</label>
+                                <select name="select" id="dropdownYear" onchange="getProjectReportFunc()">
+                                </select>
+                               </div>
+                             </div>
+                              <div class="modal-footer">
+                                  <a type="button" class="btn btn-info" href="#" data-dismiss="modal" aria-label="Close">Pay Rent</a>
+                                </div>
+                              </div>
+                         </div>
                     </div>
-        
-                </div>
-            </div>
-        </div>
       <!--------------------------pay rent modal end---------------------------------------------->
       <!--------------------------raise an issue modal strat---------------------------------------------->  
         
