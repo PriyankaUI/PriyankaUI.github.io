@@ -475,7 +475,7 @@ footer a {
   }
 }
 @media (max-width: 1098px) and (min-width: 770px) {
-  .carousel {
+  .bookings .carousel{
     width: 200px;
   }
   .pp1 {
